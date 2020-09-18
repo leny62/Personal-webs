@@ -4,3 +4,66 @@
     box-sizing: border-box ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.page-container{
+    widows: 100vw;
+    height:100vw;
+    padding: 0 6rem;
+    background-image: url('C:\Users\Leny62\Downloads\Personal-web-backg');
+}
+nav{
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+}
+nav .nav-menu li{
+    font-style: 1.5rem;
+    text-transform: uppercase;
+}
+.content{
+    display: flex;
+    height: 90vh;
+}
+#backg {
+    background-image: url('C:\Users\Leny62\Downloads\Personal-web-backg');
+    width: 80%;
+    height: 200px;
+    background-size: cover;
+    color: white;
+}
+.highlight{
+    position: relative;
+}
+.highlight .highlight-text h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: auto;
+}
+.highlight .highlight-text h2{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: auto;
+}
+.highlight .highlight-text h5{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: auto;
+}
+.highlight .social-media{
+    margin-top: 3rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.highlight .social-media img{
+    width: 2.3rem;
+}
+
+
