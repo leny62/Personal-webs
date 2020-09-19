@@ -36,6 +36,7 @@
 .logo img{
     margin:10px 35px;
     max-height: 50px;
+    opacity: 0.5;
 }
 
 .logo{
