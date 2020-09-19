@@ -1,6 +1,126 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+.page-content{
+    background-color: black;
+    color:white;
+    
+}
+
+.image-back{
+    height:93vh;
+    width: 100vw;
+}
+.image-back img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.content-overlay{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    
+    top: 0;
+    
+}
+
+.navigation{
+    height: 70px;
+    width: 100%;
+    
+}
+
+.logo img{
+    margin:10px 35px;
+    max-height: 50px;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.nav-items{
+    position:relative;
+    float: right; 
+    margin: 25px 45px;   
+}
+
+.nav-items li {
+    display: inline-block;
+    padding-right: 20px;
+}
+.nav-items li a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.profile{
+    height:80vh;
+    width:150px;
+    
+    float:left;
+}
+
+.profile-image{
+    max-width: 120px;
+    margin:20px 20px;
+    display: inline-block;
+
+}
+
+.social-media{
+    bottom: 0;
+    position: absolute;
+    width:150px;
+    margin-bottom: 80px;
+}
+
+.social-media img{
+    display: block;
+    margin:10px auto;
+    max-width: 32px;
+}
+
+.salutation{
+    width: 600px;
+    height:45vh;
+    
+    float:right;
+    margin-right:20vw;
+    margin-top: 15vh;
+}
+
+.salutation button{
+    padding:5px 10px;
+    background-color: rgb(5, 40, 116);
+    color:white;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.salutation button:hover{
+    background-color:white; 
+    color:rgb(28, 46, 87);
+}
+
+.salutation h1{
+    font-size: 50px;
+}
+
+footer{
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    width:100vw;
+    
+}
+.copyright{
+    text-align: center;
+    margin-top:10px;
+
 }

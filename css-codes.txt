@@ -8,7 +8,7 @@
     widows: 100vw;
     height:100vw;
     padding: 0 6rem;
-    background-image: url('C:\Users\Leny62\Downloads\Personal-web-backg');
+    background-image: url('C:\Users\Leny62\Desktop\Andela\Github repo\Personal-webs\Personal-web-backg.jpg');
 }
 nav{
     height: 20vw;
@@ -40,6 +40,7 @@ nav .nav-menu li{
 }
 .highlight{
     position: relative;
+    text-align: right;
 }
 .highlight .highlight-text h3{
     font-size: 1rem;
@@ -58,12 +59,41 @@ nav .nav-menu li{
 }
 .highlight .social-media{
     margin-top: 3rem;
-    width: 30%;
+    width: 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
 }
 .highlight .social-media img{
-    width: 2.3rem;
+    width: 2rem;
 }
+.footer {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .navbar a {
+    float: bottom;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .Profile-sec{
+      position: relative;
+      align-items: flex-end;
+      text-align: left;
+  }
 
 
