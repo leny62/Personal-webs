@@ -62,7 +62,6 @@
 .profile{
     height:80vh;
     width:150px;
-    
     float:left;
 }
 
@@ -107,6 +106,9 @@
 .salutation button:hover{
     background-color:white; 
     color:rgb(28, 46, 87);
+}
+.salutation button:focus{
+    outline: none;
 }
 
 .salutation h1{
