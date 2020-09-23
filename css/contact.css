@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+
+}
+body{
+    font-family: verdana;
+    font-size: 25px;
+    background-image: url(../assets/capture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+ nav{
+     margin-top: 10px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 10px ;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 60px;
+    color: white;
+    
+}
+.box{
+    height: 450px;
+    width: 800px;
+    background-color: red;
+    margin-top: 70px;
+    margin-left: 320px;
+    border-radius: 30px;
+    background: rgba(255, 234, 234, 0.8);
+}
+.box1{
+    height: 400px;
+    width: 750px;
+    background-color: white;
+    margin-top: -425px;
+    margin-left: 345px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.form{
+    float: right;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+.header1{
+    float: left;
+    padding-left: 90px;
+    padding-top: 50px;
+}
+.input{
+    border-radius: 30px;
+    height: 30px;
+    width: 250px;
+}
+.textarea{
+    border-radius: 30px;
+    width: 250px;
+    height: 80px;
+
+}
+.btn{
+    border:  black;
+    margin-left: 80px;
+    height: 30px;
+    width: 100px;
+    background-color: lightgrey;
+}
+.sign{
+    margin-right: 10px;
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+footer{
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    width:100vw;
+    
+}
+.copyright{
+    text-align: center;
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+
