@@ -1,0 +1,77 @@
+body{
+
+    background-image: url("../assets/Personal-web-backg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.navbar-brand img{
+    height: 30px;
+    padding:0 20px;
+    font-weight: bolder;
+}
+.navbar ul li a{
+    float: right;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    font-weight: 600;
+    color:white !important;
+
+}
+.navbar{
+    background-color: black !important;
+}
+
+.mainSection{
+    background-color: rgba(255, 255, 255, 0.5);
+    height:55vw;
+}
+.content{
+    padding: 15px 5px;
+    font-weight: 900;
+}
+.content img{
+    height:40px;
+    border-radius: 50%;
+    padding:0 8px;
+}
+.content a{
+    color:black;
+}
+
+#right-pane{
+    background-color: rgb(6, 107, 28);
+    border-radius:30px;
+    padding: 30px;
+    color: white;
+}
+.bio{
+    display: block;
+}
+
+.edit-button{
+    cursor: pointer;
+}
+
+.edit-button img{
+    height:20px;
+    border-radius: 50%;
+    padding: 3px 3px;
+}
+
+.profile-image img{
+    border-radius: 50%;
+}
+
+.footer{
+    background-color: black;
+    height:4.8vw;
+    position: absolute;
+    bottom:0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
