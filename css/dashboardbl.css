@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.452)),url(../assets/tech.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    height: 9vh;
+    background-color: rgb(0, 0, 0);
+}
+.heading{
+
+    margin-top: 35vh;
+    margin-bottom: 56vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading h1{
+    font-size: 80px;
+    color: #fff;
+}
+.trending-posts{
+    background-color: #fff;
+    padding: 4vw 10vw;
+}
+.trending-posts h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+
+}
+.posts-title{
+    line-height: small;
+    font-size: 20px;
+    margin-bottom: 3vh;
+    font-style: bold;
+}
+.posts-list{
+    display: flex;
+    padding-top: 4vh;
+
+}
+.posts-list .post-item{
+    margin-right: 20px;
+    /* font-size: larger; */
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+}
+.posts-list .post-item img{
+    width: 100%;
+    height: 50vh;
+}
+.announcements{
+    background-color: rgba(255, 255, 255, 0.836);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.announcements h1{
+    font-size: 45px;
+}
+.announcement{
+    margin-top: 30px;
+    background-color: azure;
+    padding: 40px;
+}
+footer{
+    height: 20vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+@media (max-width:500px){
+    .posts-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .announcements{
+        margin: 0;
+    }
+}

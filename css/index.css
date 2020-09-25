@@ -11,11 +11,13 @@
 .image-back{
     height:93vh;
     width: 100vw;
+    background-size: cover;
 }
 .image-back img{
     height: 100%;
     width: 100%;
     opacity: 0.3;
+    background-size: cover;
 }
 
 .content-overlay{
@@ -23,15 +25,7 @@
     height: 90%;
     width: 100%;
     top: 0;
-    
 }
-
-.navigation{
-    height: 70px;
-    width: 100%;
-    
-}
-
 .logo img{
     margin:10px 35px;
     max-height: 50px;
@@ -52,24 +46,42 @@
 
 .nav-items{
     position:relative;
-    float: right; 
-    margin: 25px 45px;   
+    margin: -15px -25px;
+    margin-left: auto;
+    margin-right: 30px ;   
 }
 
 .nav-items li {
     display: inline-block;
     padding-right: 20px;
+    list-style-type: none;
 }
 .nav-items li a{
     color:white;
+    list-style-type: none;
+    display: inline-block;
     text-decoration: none;
-    
+    padding: 30px;
+    font-size: 30px;   
 }
+#active{
 
+    text-decoration: underline;
+
+}
 .profile{
     height:80vh;
     width:150px;
     float:left;
+}
+.navigation{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    text-align: left;
+    
 }
 
 .profile-image{
@@ -132,8 +144,86 @@ footer{
 .copyright{
     text-align: center;
     margin-top:10px;
-
 }
 h1{
     color: white;
 }
+@media screen and (max-width: 455px){
+    
+.navigation{
+    height: 60px;
+    width: 70%;
+    /* display: block; */
+    align-self: flex-end;
+    
+}
+.social-media{
+    bottom: 0;
+    position: absolute;
+    width:100px;
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 475px){
+.logo{
+    display: in-block;
+    font-weight: bold;
+    padding-right: 50%;
+   
+}
+.logo img{
+    margin:10px 35px;
+    max-height: 50px;
+    color: black;
+    font-weight: bold;
+    align-self: center;
+       
+}
+}
+@media screen and (max-width: 975px){
+    .salutation{
+        width: 300px;
+        height:25vh;
+        float:right;
+        margin-right:12vw;
+        margin-top: 10vh;
+    }
+    
+}
+@media screen and (max-width: 520px){
+    .salutation{
+        width: 100px;
+        height: 25vh;
+        float:right;
+        margin-right:10vw;
+        margin-top: 10vh;
+    }
+    
+}
+@media screen and (max-width: 521px){
+    .intro{
+        font-size: small;
+        font-weight: normal;
+    }
+} 
+@media screen and (max-height: 492px){
+    button{
+        margin-bottom: 4px;
+    }
+    .salutation{
+        width: 60px;
+        height: 18vh;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 8vh;
+    }
+}   
+@media screen and (max-width: 600px){
+   .personl{
+       display: grid;
+       grid-template-columns: auto;
+       
+   }
+}
+
+
