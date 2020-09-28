@@ -84,7 +84,9 @@ nav ul li a{
 .p{
     padding-top: 20px;
 }
-    
+:focus{
+    outline: none;
+}    
 
 
 
