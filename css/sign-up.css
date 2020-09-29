@@ -89,6 +89,10 @@ nav ul li a{
      width: 60px;
      background-color: lightgrey;
  }
+ :focus{
+    outline: none;
+}    
+
     
 
 
