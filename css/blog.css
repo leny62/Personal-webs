@@ -146,13 +146,13 @@ nav{
     padding: 40px;
 }
 footer{
-    height: 10vh;
     background-color: black;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
+    height:4.8vw;
+    /* position: absolute; */
+    bottom:0;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 @media (max-width:500px){
     .posts-list{
