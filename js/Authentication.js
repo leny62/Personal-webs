@@ -2,7 +2,7 @@ let passWordv = document.getElementById('password2');
 let passWord = document.getElementById('password');    
 let name = document.getElementById('name');
 let verify = document.getElementById('verifyError');
-let email = document.getElementById('email');
+let email = document.getElementById('email').value;
 let loginEmail = document.getElementById('login-email');
 let auth = firebase.auth();
 // let check = document.getElementsByClassName('err');
@@ -27,7 +27,7 @@ function loginUser(){
         alert(error)
     })
 }
-// email.onchange = (e) => {
+// email.onChange = (e) => {
 //     console.log(email.value);
 //     if (!email.value.includes('@')){
 //         verify.style.visibility = 'visible';
@@ -37,7 +37,7 @@ function loginUser(){
 //         verify.style.visibility = 'hidden';
 //     }
 // }
-// loginEmail.onchange = (e) => {
+// loginEmail.onChange = (e) => {
 //     console.log(login-email.value);
 //     if (!login-email.value.includes('@')){
 //         verify.style.visibility = 'visible';

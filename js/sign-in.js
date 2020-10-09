@@ -21,6 +21,7 @@ loginEmail.onchange = (e) => {
         check.style.visibility = 'hidden';
     }
 } 
+
 // signIn.addEventListener('click', onSignIn);
 // function onSignIn (e) {
 //     e.preventDefault();
