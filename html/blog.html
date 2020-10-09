@@ -17,13 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Messages <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
+              <a class="nav-link" href="../html/about.html">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mails</a>
+              <a class="nav-link" href="../html/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/sign-in.html">Login</a>
             </li>
             <li class="nav-item dropdown">
               <a 
@@ -33,12 +36,12 @@
                 aria-haspopup="true" 
                 aria-expanded="false"
               >
-                <span>Leny Pascal</span> 
+                <span>Manage blogs</span> 
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Profile</a>
                 <a class="dropdown-item" href="#">Change mode</a>
-                <a class="dropdown-item" href="../html/sign-in.html">Logout</a>
+                <a class="dropdown-item" href="#">create account</a>
+                <a class="dropdown-item" href="../html/sign-in.html">Login</a>
               </div>
             </li>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -59,23 +62,39 @@
         <div class="trending-posts">
             <h1>Trending Posts</h1>
             <div class="posts-title">
+              <p id="">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laborum aliquam neque, saepe nisi eum. Reiciendis suscipit dolore totam incidunt? Deleniti soluta similique ipsum fugit dolore odit id praesentium non, modi at incidunt hic labore porro voluptas aliquam veritatis sequi ad ratione quibusdam aspernatur possimus. Perspiciatis illum fuga veniam dolore porro 
-            </div>
+              </p>
+              </div>
             <hr>
         
         <div class="posts-list">
             <div class="post-item">
-                <img src="../assets/christopher-gower-vjMgqUkS8q8-unsplash.jpg" alt="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate amet dolorem quia exercitationem necessitatibus accusamus odio rem impedit modi aperiam quas fuga assumenda minima facilis reiciendis illo nostrum non 
+                <H2 class="blog-title" id="headingWrapper"></H2>
+                <img src="../assets/christopher-gower-vjMgqUkS8q8-unsplash.jpg" alt="" id="imageWrapper">
+                <small> <span id="dateWrapper">   </span>  by <span id="ownerWrapper">   </span></small>
+                <p id="contentWrapper">
+
+                </p>
+               
             </div>
-            <div class="post-item">
+            <div class="others"><div class="post-item">
+              <img src="../assets/rachel-moenning-zjxYwd4HOu0-unsplash.jpg" alt="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate amet dolorem quia exercitationem necessitatibus accusamus odio rem impedit modi aperiam quas fuga assumenda minima facilis reiciendis illo nostrum non 
+          </div>
+          <div class="post-item">
+              <img src="../assets/Dj xkay.png" alt="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate amet dolorem quia exercitationem necessitatibus accusamus odio rem impedit modi aperiam quas fuga assumenda minima facilis reiciendis illo nostrum non 
+          </div>
+        <div class="posts-lists"></div>
+            <!-- <div class="post-item">
                 <img src="../assets/rachel-moenning-zjxYwd4HOu0-unsplash.jpg" alt="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate amet dolorem quia exercitationem necessitatibus accusamus odio rem impedit modi aperiam quas fuga assumenda minima facilis reiciendis illo nostrum non 
             </div>
             <div class="post-item">
                 <img src="../assets/Dj xkay.png" alt="">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate amet dolorem quia exercitationem necessitatibus accusamus odio rem impedit modi aperiam quas fuga assumenda minima facilis reiciendis illo nostrum non 
-            </div>
+            </div> -->
         </div>
     </div>
     </section>
@@ -100,9 +119,33 @@
   <footer>
       &copy; 2020 Leny Pascal Ihirwe
   </footer>
+ 
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+  <script>
+   var firebaseConfig = {
+      apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+      authDomain: "capstone-dd58a.firebaseapp.com",
+      databaseURL: "https://capstone-dd58a.firebaseio.com",
+      projectId: "capstone-dd58a",
+      storageBucket: "capstone-dd58a.appspot.com",
+      messagingSenderId: "527554723520",
+      appId: "1:527554723520:web:7a6f7805de887f664b3725",
+      measurementId: "G-VDYQRM5XRR"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+    var storage = firebase.storage();
+  </script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

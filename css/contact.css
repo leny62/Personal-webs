@@ -76,7 +76,18 @@ nav ul li a{
     height: 30px;
     width: 100px;
     background-color: lightgrey;
+    
 }
+#error_message{
+    margin-top: 3px;
+    visibility: hidden;
+    margin-bottom: 2px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
 #active{
     text-decoration: underline;
 }
@@ -103,7 +114,15 @@ footer{
 }
 :focus{
     outline: none;
+}
+.log{
+    text-decoration: none; 
+    color:cadetblue;"
+}
+.log:hover{
+    color: red;
 }    
+
 
 
 

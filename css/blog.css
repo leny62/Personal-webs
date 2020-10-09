@@ -19,6 +19,11 @@
     color:white !important;
 
 }
+.blog-title{
+color: blue;
+padding: 0em;
+margin: 0em;
+}
 .navbar{
     background-color: black !important;
 }

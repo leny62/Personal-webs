@@ -79,3 +79,6 @@ body{
     text-align: center;
     position: absolute;
 } */
+:focus{
+    outline: none;
+}    

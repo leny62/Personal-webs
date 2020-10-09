@@ -4,6 +4,7 @@ let name = document.getElementById('name');
 let verify = document.getElementById('verifyError');
 let email = document.getElementById('email');
 let loginEmail = document.getElementById('login-email');
+let auth = firebase.auth();
 // let check = document.getElementsByClassName('err');
 
 
@@ -20,7 +21,7 @@ function loginUser(){
     let email = document.getElementById('login-email').value;
     let password = document.getElementById('login-password').value;
 
-    firebase.auth().signInWithEmailAndPassword(email,password).then((user)=>{
+    auth.signInWithEmailAndPassword(email, password).then((user)=>{
         window.location.href = "../html/dashboard.html";
     }).catch((error)=>{
         alert(error)

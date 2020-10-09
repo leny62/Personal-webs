@@ -1,31 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8/">
-        <meta name="viewport" content="width=device-widht" initial-scale="1.0" />
-        <script src="https://kit.fontawesome.com/ca61573632.js" crossorigin="anonymous"></script>
-        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-        <link rel="stylesheet" href="../css/about.css">
-        <title>My brand</title>
-<body>
-    <div class="page-content">
-                <nav class="navigation">
-                <div class="logo">
-                    <img src="../assets/Logo.png" alt="Logo">
-                </div>
-                <ul>
-                    <li><a href="../index.html" class="links" ><b>Home</b></a></li>
-                    <li><a href="../html/about.html" class="links" id="active"><b>About</b></a></li>
-                    <li><a href="../html/contact.html" class="links"><B>Contact</B></a></li>
-                    <li><a href="../html/blog.html" class="links"><B>Blogs</B></a></li>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nav (1).css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://kit.fontawesome.com/ca61573632.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <title>About us</title>
+  </head>
+  <body>
+    
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="../index.html"><img src="Logo.png" alt=""></a>
                   
-                </ul>
-            </nav>
-            <div class="About">
-                <div class="resume">
-                    <a href="../assets/Academic resume (1).pdf" target="_blank"><b>Preview Resume</b></a>
-                </div>
-                <div class="About-me">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../html/blog.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../html/sign-in.html">Login</a>
+                </li>
+                
+              </ul>
+             
+            </div>
+          </nav>
+    
+    </section>
+
+    <section id="about" class="mt-md-5 pt-md-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
                     <h1 id="Abt">About me</h1>
                     <p id="me">
                         I am professionally connected to <br />
@@ -35,40 +63,58 @@
                         spectrum and working on ambitious projects <br />
                         with positive people.                              
                     </p>
-                </div>              
-                <div class="skill-level">
-                   <div class="prog">
-                        <label for="htm"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-html"></span></label>
-                        <progress id="fa-htm" value="82" max="100"> 82% </progress>
-                   </div>
-                   <div class="prog">
-                    <label for="cs"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-css"></label>
-                        <progress id="fa-cs" value="74" max="100"> 74% </progress>
-                   </div>
-                   <div class="prog">
-                    <label for="js"><span class="iconify" data-inline="false" data-icon="logos:javascript"></span></label> 
-                        <progress id="fa-js" value="68" max="100"> 68% </progress>
-                    </div>
-                   <div class="prog">
-                    <label for="java"> <i class="fab fa-java"></i></label>
-                       <progress id="fa-java" value="57" max="100"> 57% </progress>
-                   </div>
-                   <div class="prog">
-                    <label for="c++"><span class="iconify" data-inline="false" data-icon="file-icons:c"></span></label>
-                        <progress id="fa-c" value="81" max="100"> 81% </progress>
-                   </div>
-                   <div class="prog">
-                    <label for="mongd"><span class="iconify mongo-db" data-inline="false" data-icon="whh:mongodb"></span></label>
-                        <progress id="fa-mongd" value="53" max="100"> 53% </progress>
-                   </div>        
-      
                 </div>
-            </div>    
-    </div>
-    <footer>
-        <div class="copyright">
-            &copy; 2020 Leny Pascal Ihirwe
+
+                <div class="col-md-6 mt-4 mt-md-1">
+                    <div class="skill-level">
+                        <div class="prog">
+                             <label for="htm"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-html"></span></label>
+                             <progress id="fa-htm" value="82" max="100"> 82% </progress>
+                        </div>
+                        <div class="prog">
+                         <label for="cs"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-css"></label>
+                             <progress id="fa-cs" value="74" max="100"> 74% </progress>
+                        </div>
+                        <div class="prog">
+                         <label for="js"><span class="iconify" data-inline="false" data-icon="logos:javascript"></span></label> 
+                             <progress id="fa-js" value="68" max="100"> 68% </progress>
+                         </div>
+                        <div class="prog">
+                         <label for="java"> <i class="fab fa-java"></i></label>
+                            <progress id="fa-java" value="57" max="100"> 57% </progress>
+                        </div>
+                        <div class="prog">
+                         <label for="c++"><span class="iconify" data-inline="false" data-icon="file-icons:c"></span></label>
+                             <progress id="fa-c" value="81" max="100"> 81% </progress>
+                        </div>
+                        <div class="prog">
+                         <label for="mongd"><span class="iconify mongo-db" data-inline="false" data-icon="whh:mongodb"></span></label>
+                             <progress id="fa-mongd" value="53" max="100"> 53% </progress>
+                        </div>        
+           
+                     </div>
+                </div>
+            </div>
         </div>
-    </footer>
-</body>
+    </section>
+
+    <section id="footer">
+        <div class="mx-auto">
+          Copyright &copy; Leny Pascal, 2020. All rights reserved
+        </div>
+    </section>    
+     
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>

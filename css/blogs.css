@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.blog-container{
+    background-color: burlywood;
+    height:250px;
+    position: relative;
+    padding:2px;
+}
+.main-content{
+    background-color: gray;
+    height: 90%;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: 40px;
+    padding-top: 10px;
+    
+}
+
