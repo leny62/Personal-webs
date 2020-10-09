@@ -96,13 +96,17 @@
    </div>
  </section>   
    
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script> -->
+
 <script>
- var firebaseConfig = {
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
     apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
     authDomain: "capstone-dd58a.firebaseapp.com",
     databaseURL: "https://capstone-dd58a.firebaseio.com",
@@ -112,7 +116,6 @@
     appId: "1:527554723520:web:7a6f7805de887f664b3725",
     measurementId: "G-VDYQRM5XRR"
   };
-  
   firebase.initializeApp(firebaseConfig);
   var db = firebase.firestore();
   var auth = firebase.auth();
