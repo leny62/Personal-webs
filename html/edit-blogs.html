@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/edit-blogs.css">
+    <link rel="../css/edit-blog-footer.css">
+
+    <title>Blogs</title>
+    
+  </head>
+  <body>
+
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="../index.html"><img src="../assets/Logo.png" alt=""></a>
+                  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Username
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="../html/dashboard.html">Dashboard</a>
+                      <a class="dropdown-item" href="#">Messages</a>
+                      <a class="dropdown-item" href="#">Querries</a>
+                      <a class="dropdown-item" href="#">Nortifications</a>
+                      <a class="dropdown-item" href="../html/sign-in.html">Logout</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-search px-1" aria-hidden="true"></i>Home</a>
+                  </li>
+              </ul>
+             
+            </div>
+          </nav>
+    
+    </section>
+
+    <section id="blog">
+        <div class="container pt-5">
+            <div class="text-center">
+                <h1>Blogs</h1>
+                <h3>Create Blog</h3>
+            </div>
+            <div class="row offset-md-4 mt-5">
+                <div class="col-md-6">
+                    <form action="" onsubmit="event.preventDefault()" class="blog-container">
+                      <label for="">Title</label><br>
+                      <input type="text" id="title" >
+                      <br><br>
+                      <label for="">Content</label><br>
+                      <textarea name="" id="body" cols="30" rows="10"></textarea>
+                      <br><br>
+                      
+              
+                      <label for="">Image</label><br>
+                      <input type="file" id="image" onchange="uploadImage(event)" >
+                      <br><br>
+                      <button onclick="createBlog()">Create Blog</button>
+                  </form>
+              
+                    
+                </div>
+            </div>
+        </div>
+       
+        
+    </section>
+    
+   
+ <section id="footer">
+   <div class="mx-auto">
+     Copyright &copy; Leny Pascal, 2020. All rights reserved
+   </div>
+ </section>   
+   
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+<script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+    authDomain: "capstone-dd58a.firebaseapp.com",
+    databaseURL: "https://capstone-dd58a.firebaseio.com",
+    projectId: "capstone-dd58a",
+    storageBucket: "capstone-dd58a.appspot.com",
+    messagingSenderId: "527554723520",
+    appId: "1:527554723520:web:7a6f7805de887f664b3725",
+    measurementId: "G-VDYQRM5XRR"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+  var auth = firebase.auth();
+  var storage = firebase.storage();
+</script>
+
+
+<script src="../js/blogs.js"></script>
+<script src="../js/utils.js"></script>
+<script src="../js/firebase.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -21,20 +21,27 @@
 <div class="box"></div> 
 <div class="box1">
     <div class="sign">
-        <p><a href="../html/sign-in.html">Log-in</a></p>
+        <p><a href="../html/sign-in.html" class="log">Log-in </a>to edit blogs</p>
     </div>
     <H2 class="header1">Leave a <br>message</H2>
-    <div class="form">
+    <div id="error_message">Error</div>
+    <form class="form" id="myform">
         <div class="inputfields">
             <label for="name">Name</label><br>
-            <input type="text" class="input"><br>
+            <input type="text" class="input" id="name"><br>
             <label for="email">email</label><br>
-            <input type="email" class="input"><br>
+            <input type="email" class="input" id="email"><br>
             <label for="message">message</label><br>
-            <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="textarea" id="message"></textarea>
         </div>
         <input type="button" value="Send" class="btn">
-    </div>
+    </form>
 </div>
+
+<script src="../js/contact.js"></script>
+
+<!-- <script src="../js/Authentication.js"></script> -->
+<!-- <script src="../js/sign-in.js"></script> -->
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-*{
+/* *{
      margin:0;
     padding:0;
 }
@@ -11,7 +11,7 @@ body{
 }
 .page-content{
     /* background-color:rgb(83, 76, 76); */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     color: black;
     height: 100vh;
@@ -159,4 +159,33 @@ label i{
 @media screen and (max-width: 670px){}
 @media screen and (max-width: 670px){}
 @media screen and (max-width: 670px){}
-@media screen and (max-width: 670px){}
+@media screen and (max-width: 670px){} */ 
+
+#Abt{
+    color: #354A2B;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+#me{
+    font-family: Rasa;
+    font-size: 20px;
+}
+
+
+progress{
+    height: 30px;
+    width: 300px;
+}
+.prog label{
+    width: 80px;
+}
+label .iconify{
+    font-size: 30px;
+}
+label i{
+    font-size: 40px;
+}
+.mongo-db{
+    color: green;
+}
