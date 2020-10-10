@@ -14,8 +14,8 @@
 // let email = document.getElementById('email');
 
 email.onchange = (e) => {
-    console.log(email.value);
-    if (!email.value.includes('@')){
+    console.log(email);
+    if (!email.includes('@')){
         verify.style.visibility = 'visible';
         verify.innerHTML = 'email must be valid';
     }
@@ -24,7 +24,7 @@ email.onchange = (e) => {
     }
 }
 passWordv.oninput = function () {
-    if (passWord.value !== passWordv.value) {
+    if (passWord !== passWordv) {
         verify.style.visibility = 'visible';
         verify.innerHTML = 'passwords do not match';
     } else {

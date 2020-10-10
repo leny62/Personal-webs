@@ -1,6 +1,6 @@
 let bt = document.getElementsByClassName("btn");
 bt.onclick = validate;
-function validate(){
+function validate(){git
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
@@ -33,4 +33,4 @@ function validate(){
       return true;
     }
     
-  }
+  
