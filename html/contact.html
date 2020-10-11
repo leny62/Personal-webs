@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" typetype="text/css" href="../css/nav.css">
+    <!-- <link rel="stylesheet" typetype="text/css" href="../css/sign-in.css"> -->
+    <link rel="stylesheet" typetype="text/css" href="../css/footer.css">
+    
     <title>Contact us</title>
     <link rel="stylesheet" typetype="text/css" href="../css/contact.css">
 </head>
-<body>
-    
-       <nav>
-        <ul>
-            <li><a href="../index.html" class="links" ><b>Home</b></a></li>
-            <li><a href="../html/about.html" class="links"><b>About</b></a></li>
-            <li><a href="../html/contact.html" class="links" id="active"><B>Contact</B></a></li>
-            <li><a href="../html/blog.html" class="links"><B>Blogs</B></a></li>
-          
-        </ul>
-        </nav> <br>
+<section id="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-auto" href="../index.html"><img src="../assets/Logo.png" alt=""></a>
+              
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+                
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../html/blog.html">Blogs</a>
+            </li>
+            <li class="nav-item" id="active">
+                <a class="nav-link " href="../html/sign-in.html">Login</a>
+            </li>
+            
+          </ul>
+         
+        </div>
+      </nav>
+
+</section>
        
 <div class="box"></div> 
 <div class="box1">
@@ -25,23 +52,55 @@
     </div>
     <H2 class="header1">Leave a <br>message</H2>
     <div id="error_message">Error</div>
-    <form class="form" id="myform">
+    <form class="form" id="myform" onsubmit="event.preventDefault()">
         <div class="inputfields">
             <label for="name">Name</label><br>
             <input type="text" class="input" id="name"><br>
             <label for="email">email</label><br>
             <input type="email" class="input" id="email"><br>
             <label for="message">message</label><br>
-            <textarea name="" id="" cols="30" rows="10" class="textarea" id="message"></textarea>
+            <textarea name="" cols="30" rows="10" class="textarea" id="message"></textarea>
         </div>
-        <input type="button" value="Send" class="btn">
+        <input type="button" value="Send" class="btn" onclick="sendEnquiry()">
     </form>
 </div>
+<section id="footer">
+    <div class="mx-auto">
+      Copyright &copy; Leny Pascal, 2020. All rights reserved
+    </div>
+</section> 
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script> -->
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+    authDomain: "capstone-dd58a.firebaseapp.com",
+    databaseURL: "https://capstone-dd58a.firebaseio.com",
+    projectId: "capstone-dd58a",
+    storageBucket: "capstone-dd58a.appspot.com",
+    messagingSenderId: "527554723520",
+    appId: "1:527554723520:web:7a6f7805de887f664b3725",
+    measurementId: "G-VDYQRM5XRR"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+  // var auth = firebase.auth();
+//   var storage = firebase.storage();
+
+</script>
 
 <script src="../js/contact.js"></script>
 
-<!-- <script src="../js/Authentication.js"></script> -->
-<!-- <script src="../js/sign-in.js"></script> -->
 
 </body>
 </html>

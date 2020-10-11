@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/dashboard.css" rel="stylesheet" type="text/css">
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/messages.css" rel="stylesheet" type="text/css">
+    
+    <title>Enquiries</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -19,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../html/messages.html">Messages <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Messages <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Notifications</a>
@@ -53,7 +54,7 @@
 
                     <div class="row">
                         <div class="col-12 content">
-                            <a href="#">
+                            <a href="../html/dashboard.html">
                                 <img src="../assets/GPS.png" class="img-responsive"alt="">
                                 Dashboard                             
                             </a>
@@ -97,44 +98,47 @@
                     </div>
               </section>
 
-              <section class="col-7 mt-5 ml-4" id="right-pane">
-                  <div class="row">
-                      <div class="col-3">
-                          <div class="profile-image">
-                              <img src="../assets/PersonMale.png" alt="" class="img-fluid">
-                          </div>
-                      </div>
-                      
-                      <div class="col-5">
-                        <div class="nametag">
-                            <span id="userName">loading...</span><br>
-                            <span id="userEmail">loading...</span>
-                            <span>
-                                <input type="file" name="profilePic" id="pic" class="mt-5">
-                            </span>
-                        </div>
-                      </div>
-
-                      <div class="col-4 bioDescription">
-                          <span>Bio :</span>  
-                          <span class="bio mt-1">
-                              Lorem ipsum dolor sit, 
-                              amet consectetur adipisicing elit. 
-                              Inventore natus eaque quis.
-                              Quod, veritatis quaerat? Dolore incidunt
-                              
-                          </span>   
-                          <span>
-                                <button class="edit-button mt-4">
-                                    <img src="../assets/PersonMale.png" class="img-responsive" alt="head">
-                                    Edit Profile
-                                </button>
-                          </span>                   
-                      </div>
-
-                  </div>
-                  
-              </section>
+<section class="col-7 mt-5 ml-4" id="right-pane">
+<table id="enquiryTable">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    <th>Delete</th>
+  </tr>
+  <!-- <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr> -->
+</table>
+                
+</section>
           </div>
       </div>
       <div class="container-fluid footer">
@@ -170,6 +174,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../js/Authentication.js"></script>
+    <script src="../js/contact.js"></script>
     <script src="../js/dashboard.js"></script>
   </body>
 </html>

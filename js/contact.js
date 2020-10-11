@@ -1,6 +1,6 @@
 let bt = document.getElementsByClassName("btn");
 bt.onclick = validate;
-function validate(){git
+function validate(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
@@ -32,5 +32,42 @@ function validate(){git
       alert("Form Submitted Successfully!");
       return true;
     }
+
+    function sendEnquiry(){
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      let message = document.getElementById('message').value;
+      let form = document.getElementById('myform');
+      
+      db.collection('enquiries').doc().set({
+        name: name,
+        email: email,
+        message: message
+      }).then(()=>{
+        form.reset();
+        alert("An enquiry sent successfully")
+
+      }).catch((error)=>{
+        alert(error)
+      })
+
+    }
+
+    function getEnquiries(){
+      let table = document.getElementById('enquiryTable');
+      db.collection('enquiries').get().then((enquiries)=>{
+        enquiries.forEach(enquiry => {
+          table.innerHTML+= `
+          <tr>
+          <td>${enquiry.data().name}</td>
+          <td>${enquiry.data().email}</td>
+          <td>${enquiry.data().message}</td>
+          <td><img src="../assets/delete-icon-18-ffffff-16.png"</td>
+        </tr>
+          `
+        });
+      })
+    }
+    getEnquiries();
     
   
