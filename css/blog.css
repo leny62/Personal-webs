@@ -118,7 +118,14 @@ nav{
 .posts-list{
     display: flex;
     padding-top: 4vh;
+    justify-content: space-between;
 
+}
+.main-post-item{
+    width: 70%;
+}
+#others{
+    width: 25%;
 }
 .posts-list .post-item{
     margin-right: 20px;
@@ -130,6 +137,20 @@ nav{
 .posts-list .post-item img{
     width: 100%;
     height: 50vh;
+}
+.post-item{
+    margin-top: 2em;
+}
+.post-item small{
+    color: rgb(19, 89, 129);
+}
+.post-item small:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.post-item img{
+    height: 200px !important; 
 }
 .announcements{
     background-color: rgba(255, 255, 255, 0.836);

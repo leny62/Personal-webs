@@ -50,6 +50,7 @@ function createBlog(){
 }
 
 function fetchData(){
+
     db.collection("Blogs").get().then((querySnapshot) => {
       querySnapshot.forEach((blog)=> {
         
@@ -92,9 +93,24 @@ function dipslayBlogPosts(){
    
 }
 
+function displayOtherBlogs(){
+
+    let otherBlogContainer = document.getElementById('others');
+    blogs.forEach((blog)=>{
+       otherBlogContainer.innerHTML+=`
+            <div class="post-item">
+            <h2>${blog.title}</h2>
+            <img src="${blog.imageSrc}" alt="">
+             <small>Read more</small>  
+            </div> 
+         `
+    })
+}
+
 
 fetchData();
 
 setTimeout(()=>{
-    dipslayBlogPosts()
-},5000)
+    dipslayBlogPosts();
+    displayOtherBlogs();
+},8000)
