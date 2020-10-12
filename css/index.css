@@ -1,229 +1,54 @@
-*{
+body{
     margin:0;
     padding:0;
+    height: 100vh;
 }
-.page-content{
-    background-color: black;
-    color:white;
+
+#main{
+    background-image: url("../assets/Personal-web-backg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    overflow: hidden;
     
 }
 
-.image-back{
-    height:93vh;
-    width: 100vw;
-    background-size: cover;
-}
-.image-back img{
-    height: 100%;
-    width: 100%;
-    opacity: 0.3;
-    background-size: cover;
+.overlay{
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 120vh;
+    
 }
 
-.content-overlay{
-    position: absolute;
-    height: 90%;
-    width: 100%;
-    top: 0;
-}
-.logo img{
-    margin:10px 35px;
-    max-height: 50px;
-    opacity: 10;
-    color: black;
-}
-
-.logo{
-    display: inline-block;
-    font-weight: bold;
-}
-.logo img{
-    margin:10px 35px;
-    max-height: 50px;
-    color: black;
-    font-weight: bold;   
-}
-
-.nav-items{
-    position:relative;
-    margin: -15px -25px;
-    margin-left: auto;
-    margin-right: 30px ;   
-}
-
-.nav-items li {
-    display: inline-block;
-    padding-right: 20px;
-    list-style-type: none;
-}
-.nav-items li a{
-    color:white;
-    list-style-type: none;
-    display: inline-block;
-    text-decoration: none;
-    padding: 30px;
-    font-size: 30px;   
-}
-#active{
-
-    text-decoration: underline;
-
-}
-.profile{
-    height:80vh;
-    width:150px;
-    float:left;
-}
-.navigation{
+.profile-picture{
+    border-radius: 50%;
     height: 70px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 2px;
-    text-align: left;
-    
-}
-
-.profile-image{
-    max-width: 120px;
-    margin:20px 20px;
-    display: inline-block;
-
-}
-
-.social-media{
-    bottom: 0;
-    position: absolute;
-    width:150px;
-    margin-bottom: 80px;
-}
-
-.social-media img{
+    width:70px;
     display: block;
-    margin:10px auto;
-    max-width: 32px;
 }
 
 .salutation{
-    width: 600px;
-    height:45vh;
-    
-    float:right;
-    margin-right:20vw;
-    margin-top: 15vh;
-}
-
-.salutation button{
-    padding:5px 10px;
-    background-color: rgb(5, 40, 116);
     color:white;
-    border-radius: 5px;
-    margin-top: 50px;
-    cursor: pointer;
-    transition: 0.5s;
 }
-.salutation button:hover{
-    background-color:white; 
-    color:rgb(28, 46, 87);
-}
-.salutation button:focus{
-    outline: none;
+.contact-btn{
+    padding: 4px 15px;
+    font-size: 17px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
 }
 
-.salutation h1{
-    font-size: 50px;
-}
-
-footer{
-    height: 5vh;
-    background-color: rgb(255, 255, 255);
-    margin:0;
-    width:100vw;
-    
-}
-.copyright{
-    text-align: center;
-    margin-top:10px;
-}
-h1{
-    color: white;
-}
-@media screen and (max-width: 455px){
-    
-.navigation{
-    height: 60px;
-    width: 70%;
-    /* display: block; */
-    align-self: flex-end;
-    
-}
-.social-media{
-    bottom: 0;
-    position: absolute;
-    width:100px;
-    margin-bottom: 30px;
-}
-}
-@media screen and (max-width: 475px){
-.logo{
-    display: in-block;
-    font-weight: bold;
-    padding-right: 50%;
-   
-}
-.logo img{
-    margin:10px 35px;
-    max-height: 50px;
-    color: black;
-    font-weight: bold;
-    align-self: center;
-       
-}
-}
-@media screen and (max-width: 975px){
-    .salutation{
-        width: 300px;
-        height:25vh;
-        float:right;
-        margin-right:12vw;
-        margin-top: 10vh;
-    }
-    
-}
-@media screen and (max-width: 520px){
-    .salutation{
-        width: 100px;
-        height: 25vh;
-        float:right;
-        margin-right:10vw;
-        margin-top: 10vh;
-    }
-    
-}
-@media screen and (max-width: 521px){
-    .intro{
-        font-size: small;
-        font-weight: normal;
-    }
-} 
-@media screen and (max-height: 492px){
-    button{
-        margin-bottom: 4px;
-    }
-    .salutation{
-        width: 60px;
-        height: 18vh;
-        float: right;
-        margin-right: 5vw;
-        margin-top: 8vh;
-    }
-}   
-@media screen and (max-width: 600px){
-   .personl{
-       display: grid;
-       grid-template-columns: auto;
-       
-   }
+.social-media img{
+    height:45px;
+    padding:10px 20px;
 }
 
 
+
+
+
+
+@media only screen and (max-height: 500px) {
+    #main{
+        overflow: scroll;
+    }
+
+}
