@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/edit-blogs.css">
+    <link rel="stylesheet" typetype="text/css" href="../css/indexFooter.css">
     <link rel="../css/edit-blog-footer.css">
 
     <title>Blogs</title>
@@ -29,7 +30,7 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Username
+                      Options
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="../html/dashboard.html">Dashboard</a>
@@ -60,42 +61,30 @@
     </section>
 
     <section id="blog">
-        <div class="container pt-5">
-            <div class="text-center">
-                <h1>Blogs</h1>
-                <h3>Create Blog</h3>
-            </div>
-            <div class="row offset-md-4 mt-5">
-                <div class="col-md-6">
-                    <form action="" onsubmit="event.preventDefault()" class="blog-container">
-                      <label for="">Title</label><br>
-                      <input type="text" id="title" >
-                      <br><br>
-                      <label for="">Content</label><br>
-                      <textarea name="" id="body" cols="30" rows="10"></textarea>
-                      <br><br>
-                      
-              
-                      <label for="">Image</label><br>
-                      <input type="file" id="image" onchange="uploadImage(event)" >
-                      <br><br>
-                      <button onclick="createBlog()">Create Blog</button>
-                  </form>
-              
-                    
+        <h1>Blogs</h1>
+        <h4>Create blog</h4>
+        <div class="form">
+            <form action="action_page.php" class="form-controls">
+                <label for="fname">Title: </label>
+                <input type="text" id="fname" name="firstname" placeholder="Title.."><br/>
+
+                <label for="subject">Blog</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <div class="buttons">
+                    <button>Upload Image</button>
+                    <button class="submit" type="submit">Submit</button>
+
                 </div>
-            </div>
+            </form>
         </div>
-       
-        
     </section>
-    
+    <section id="footer">
+      <div class="mx-auto">
+        Copyright &copy; Leny Pascal, 2020. All rights reserved
+      </div>
+  </section> 
    
- <section id="footer">
-   <div class="mx-auto">
-     Copyright &copy; Leny Pascal, 2020. All rights reserved
-   </div>
- </section>   
+  
    
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>

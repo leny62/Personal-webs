@@ -1,32 +1,70 @@
-*{
-    margin: 0;
-    padding: 0;
+#blog{
+  padding:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.blog-container{
-    background-color: burlywood;
-    height:550px;
-    position: center;
-    padding: 30px;
-    margin-bottom: 60px;
-    width: 40vw;
 
+.form{
+  background-color: #d6d6d6;
+  display: flex;
+  padding:20px 30px;
+  width:70%;
+  margin-top: 30px;
+  border-radius: 10px;
+  font-size: 17px;
 }
-.main-content{
-    background-color: gray;
-    height: 90%;
+label{
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 3px;
 }
-
-#footer{
-    position: bottom;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 12px;
-    height: 40px;
-    padding-top: 10px;
-    
+input[type="text"], textarea{
+  width:100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.form-controls{
+  width: 100%;
 }
 
+.buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buttons button{
+  padding: 12px 20px;
+  background-color:  rgb(93, 100, 94);
+  font-size: 18px;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 798px) {
+ #blog{
+  padding:30px;
+ }
+ .form{
+     width:90%;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+  #blog{
+      padding:15px;
+     }
+     .form{
+         width:100%;
+     }
+     .buttons button{
+         padding: 8px 8px;
+     }
+}
