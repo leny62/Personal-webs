@@ -3,7 +3,7 @@
 }
 
 .box{
-    background-color:rgba(255, 181, 181, 0.8);
+    background-color: rgb(93, 100, 94);
     border-radius: 20px;
     padding:20px;
     
@@ -20,14 +20,15 @@
 }
 a{
     text-decoration: none;
-    color: blueviolet;
+    color: black;
     font-size: 18px;
 }
 .create-acc{
     border-radius: 10px;
 }
 .create-acc:hover{
-    color: hotpink;
+    color: wheat;
+    text-decoration: none;
 }
 
 
@@ -51,3 +52,13 @@ a{
 :focus{
     outline: none;
 }    
+@media only screen and (min-width: 600px) {
+    .downFooter{
+    position: relative;
+    bottom: 0;
+    }
+    #footer{
+        position: absolute;
+        padding-bottom: 0%;
+    }
+}
