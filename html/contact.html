@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <link rel="stylesheet" typetype="text/css" href="../css/nav.css">
-    <!-- <link rel="stylesheet" typetype="text/css" href="../css/sign-in.css"> -->
-    <link rel="stylesheet" typetype="text/css" href="../css/footer.css">
+    <link rel="stylesheet" typetype="text/css" href="../css/indexFooter.css">
     
     <title>Contact us</title>
     <link rel="stylesheet" typetype="text/css" href="../css/contact.css">
@@ -45,30 +44,40 @@
 
 </section>
        
-<div class="box"></div> 
-<div class="box1">
-    <div class="sign">
-        <p><a href="../html/sign-in.html" class="log">Log-in </a>to edit blogs</p>
-    </div>
-    <H2 class="header1">Leave a <br>message</H2>
-    <div id="error_message">Error</div>
-    <form class="form" id="myform" onsubmit="event.preventDefault()">
-        <div class="inputfields">
-            <label for="name">Name</label><br>
-            <input type="text" class="input" id="name"><br>
-            <label for="email">email</label><br>
-            <input type="email" class="input" id="email"><br>
-            <label for="message">message</label><br>
-            <textarea name="" cols="30" rows="10" class="textarea" id="message"></textarea>
+
+    <section id="form">
+        <div class="form-outer">
+            <div class="form-inner">
+                <div class="form-left">
+                    <div class="form-title">
+                        Leave a message
+                    </div>
+                </div>
+                <div class="form-right">
+                    <p><a href="../html/sign-in.html" class="log">Log-in </a>to edit blogs</p>
+
+                    <form class="form" id="myform" onsubmit="event.preventDefault()">
+                        <div class="inputfields">
+                            <label for="name">Name</label><br>
+                            <input type="text" class="input" id="name"><br>
+                            <label for="email">email</label><br>
+                            <input type="email" class="input" id="email"><br>
+                            <label for="message">message</label><br>
+                            <textarea name="" cols="30" rows="10" class="textarea" id="message"></textarea>
+                        </div>
+                        <input type="button" value="Send" class="btn" onclick="sendEnquiry()">
+                    </form>
+                </div>
+            </div>
         </div>
-        <input type="button" value="Send" class="btn" onclick="sendEnquiry()">
-    </form>
-</div>
-<section id="footer">
-    <div class="mx-auto">
-      Copyright &copy; Leny Pascal, 2020. All rights reserved
-    </div>
-</section> 
+    </section>
+    <section id="footer">
+      <div class="mx-auto">
+        Copyright &copy; Leny Pascal, 2020. All rights reserved
+      </div>
+  </section> 
+
+
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
