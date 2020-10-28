@@ -39,8 +39,7 @@
                 <span>Manage blogs</span> 
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Change mode</a>
-                <a class="dropdown-item" href="#">create account</a>
+                <a class="dropdown-item" href="../html/sign-up.html">create account</a>
                 <a class="dropdown-item" href="../html/sign-in.html">Login</a>
               </div>
             </li>
@@ -60,11 +59,14 @@
     </section>
     <section>
         <div class="trending-posts">
-            <h1>Trending Posts</h1>
+            <h1>Post</h1>
             <div class="posts-title">
               <p id="">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque laborum aliquam neque, saepe nisi eum. Reiciendis suscipit dolore totam incidunt? Deleniti soluta similique ipsum fugit dolore odit id praesentium non, modi at incidunt hic labore porro voluptas aliquam veritatis sequi ad ratione quibusdam aspernatur possimus. Perspiciatis illum fuga veniam dolore porro 
               </p>
+              <div id="allcomments">
+                  <p style="color: darkblue;">Comments</p>
+              </div>
               </div>
             <hr>
         
@@ -72,34 +74,18 @@
             <div class="main-post-item">
                 <H2 class="blog-title" id="headingWrapper"></H2>
                 <img src="" alt="" id="imageWrapper">
-                <small> <span id="dateWrapper">   </span>  by <span id="ownerWrapper">   </span></small>
                 <p id="contentWrapper">
-
                 </p>
-               
+
+                <form id="form-input">
+                  <textarea placeholder="comment on this post" id="comment" rows="5"></textarea>
+                  <button onclick="post(event)" type="submit">Comment</button>
+                </form>  
             </div>
           <div class="others" id="others">
             
         </div>
     </div>
-    </section>
-    <section>
-        <div class="announcements">
-            <h1>Announcements</h1>
-            <div class="announcement">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo esse facilis, deleniti eveniet soluta dolor veniam autem. Soluta nulla natus aut at ad illo itaque culpa dolorem rerum rem.
-            </div>
-            <div class="announcement">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo esse facilis, deleniti eveniet soluta dolor veniam autem. Soluta nulla natus aut at ad illo itaque culpa dolorem rerum rem.
-            </div>
-            <div class="announcement">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo esse facilis, deleniti eveniet soluta dolor veniam autem. Soluta nulla natus aut at ad illo itaque culpa dolorem rerum rem.
-            </div>
-            <div class="announcement">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo esse facilis, deleniti eveniet soluta dolor veniam autem. Soluta nulla natus aut at ad illo itaque culpa dolorem rerum rem.
-            </div>
-
-        </div>
     </section>
   <footer>
       &copy; 2020 Leny Pascal Ihirwe
@@ -135,5 +121,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    <script src="../js/blogs.js"></script>
+   <script  src="../js/blogcomment.js"></script>
  </body>
 </html>
