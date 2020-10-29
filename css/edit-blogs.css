@@ -45,8 +45,17 @@ input[type="text"], textarea{
   outline: none;
   border-radius: 5px;
 }
-
-
+.pic{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 12px 20px;
+  /* background-color:  rgb(93, 100, 94); */
+  font-size: 18px;
+  /* color: white; */
+  outline: none;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 798px) {
  #blog{
@@ -66,5 +75,8 @@ input[type="text"], textarea{
      }
      .buttons button{
          padding: 8px 8px;
+     }
+     .pic{
+      padding: 8px 8px;
      }
 }
