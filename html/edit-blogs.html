@@ -71,8 +71,9 @@
                 <label for="subject">Blog</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                 <div class="buttons">
-                    <button>Upload Image</button>
-                    <button class="submit" type="submit">Submit</button>
+                  <input type="file" id="image"  class="pic" onchange="uploadImage(event)" >
+                    <!-- <button>Upload Image</button> -->
+                    <button onclick=createBlog() class="submit" type="submit">Post</button>
 
                 </div>
             </form>
