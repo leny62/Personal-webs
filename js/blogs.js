@@ -20,10 +20,14 @@ function uploadImage(event){
 function createBlog(){
     let today = new Date();
     let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-   
+
+   const authorName = localStorage.getItem('userName');
+
+    console.log('=======', authorName);
+
     let blogTitle = document.getElementById('title').value;
     let blogContnent = document.getElementById('body').value;
-    let blogOwner = "John Doe";
+    let blogOwner = authorName;
     let blogId = generateBlogId();
     // let imageURL = ''
     
@@ -36,7 +40,7 @@ function createBlog(){
             date: date
     
         }).then(()=>{
-              
+              console.log('Hell yah')
         }).catch((collectionError)=>{
             alert(collectionError);
         })
@@ -57,7 +61,7 @@ function fetchData(){
         // doc.data() is never undefined for query doc snapshots
         // console.log(blog.id, " => ", blog.data());
         storage.ref(blog.data().imageURL).getDownloadURL().then((blogImageUrl)=>{
-           blogs.push({
+           blogs.push({  
                title: blog.data().title,
                blogContent: blog.data().blogBody,
                date: blog.data().date,
@@ -78,9 +82,12 @@ function fetchData(){
 }  
 
 function dipslayBlogPosts(){
-   let postTitle = document.getElementById('headingWrapper');
-   let postImage = document.getElementById('imageWrapper');
-   let postBody = document.getElementById('contentWrapper');
+
+    fetchData();
+
+   let postTitle = document.getElementById('blogTitle');
+   let postImage = document.getElementById('blogImage');
+   let postBody = document.getElementById('blogContent');
    let postDate = document.getElementById('dateWrapper');
    let postAuthor = document.getElementById('ownerWrapper');
        let size = blogs.length;
@@ -95,6 +102,8 @@ function dipslayBlogPosts(){
 
 function displayOtherBlogs(){
 
+fetchData();
+
     let otherBlogContainer = document.getElementById('others');
     blogs.forEach((blog)=>{
        otherBlogContainer.innerHTML+=`
@@ -108,9 +117,7 @@ function displayOtherBlogs(){
 }
 
 
-fetchData();
-
-setTimeout(()=>{
-    dipslayBlogPosts();
-    displayOtherBlogs();
-},8000)
+// setTimeout(()=>{
+//     dipslayBlogPosts();
+//     displayOtherBlogs();
+// },8000)
