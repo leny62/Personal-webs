@@ -64,16 +64,16 @@
         <h1>Blogs</h1>
         <h4>Create blog</h4>
         <div class="form">
-            <form action="action_page.php" class="form-controls">
+          <form action="" onsubmit="event.preventDefault()" class="blog-container form-controls">
                 <label for="fname">Title: </label>
-                <input type="text" id="fname" name="firstname" placeholder="Title.."><br/>
+                <input type="text" id="title" name="title" placeholder="Title.."><br/>
 
                 <label for="subject">Blog</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="body" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                 <div class="buttons">
                   <input type="file" id="image"  class="pic" onchange="uploadImage(event)" >
                     <!-- <button>Upload Image</button> -->
-                    <button onclick=createBlog() class="submit" type="submit">Post</button>
+                    <button onclick="createBlog()" class="submit" type="submit">Post</button>
 
                 </div>
             </form>
