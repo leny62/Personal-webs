@@ -7,11 +7,11 @@
 //     .then(resultData =>console.log(resultData))
 //     .catch(error =>console.log(error));
 // }
-// let passWordv = document.getElementById('password2');
-// let passWord = document.getElementById('password');
-// let name = document.getElementById('name');
-// let verify = document.getElementById('verifyError');
-// let email = document.getElementById('email');
+let passWordv = document.getElementById('password2');
+let passWord = document.getElementById('password');
+let name = document.getElementById('name');
+let verify = document.getElementsByClassName('messge');
+let email = document.getElementById('email');
 
 email.onchange = (e) => {
     console.log(email);
