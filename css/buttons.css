@@ -1,0 +1,52 @@
+.regularButton{
+        margin: 10px 0px;
+        padding: 12px 20px;
+        background-color:  rgb(93, 100, 94);
+        font-size: 18px;
+        color: #fff;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+}
+
+.regularButton:hover{
+    background-color:  #fff;
+    color: rgb(93, 100, 94);
+    cursor: pointer;
+}
+
+.whiteButton{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color:  #fff;
+    font-size: 18px;
+    color: rgb(93, 100, 94);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.whiteButton:hover{
+        color:  #fff;
+        background-color: rgb(93, 100, 94);
+        cursor: pointer;
+        border: 1px solid #fff;
+}
+.whiteButton1{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color:  #fff;
+    font-size: 18px;
+    color: rgb(93, 100, 94);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-left: 80px;
+    /* margin-top: 20px; */
+}
+.whiteButton1:hover{
+    color:  #fff;
+    background-color: rgb(93, 100, 94);
+    cursor: pointer;
+    border: 1px solid #fff;
+}
