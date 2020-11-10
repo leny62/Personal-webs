@@ -44,11 +44,12 @@ body{
 
 #right-pane{
     background-color: rgb(93, 100, 94);
-    border-radius:30px;
-    padding: 30px;
-    color: white;
+    border-radius:6px;
+    padding: 10px;
+    color: #fff;
     /* visibility: hidden; */
 }
+
 /* .edit-profile{
     display: flex;
     flex-direction: column;
@@ -96,3 +97,222 @@ body{
 :focus{
     outline: none;
 }    
+
+* {
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+  }
+  body {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+  }
+  .img-fluid {
+    width: 100px;
+  }
+  .news {
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    top: 70px;
+    left: 490px;
+    background-color: whitesmoke;
+  }
+  .yu {
+    background-color: bisque;
+  }
+  .user-a {
+    background-color: green;
+  }
+  .navbar-brand img {
+    height: 30px;
+    padding: 0 20px;
+    font-weight: bolder;
+  }
+  .navbar ul li a {
+    float: right;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: white !important;
+  }
+  .navbar {
+    background-color: black !important;
+  }
+  
+  .mainSection {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 55vw;
+  }
+  .content {
+    padding: 15px 5px;
+    font-weight: 900;
+  }
+  .content img {
+    height: 40px;
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+  .content a {
+    color: black;
+  }
+
+  .bio {
+    display: block;
+  }
+  .us {
+  }
+  .left_a {
+    background-color: whitesmoke;
+    width: 20%;
+  }
+  .bios {
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    background-color: whitesmoke;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .edit-button {
+    cursor: pointer;
+  }
+  
+  .edit-button img {
+    height: 20px;
+    border-radius: 50%;
+    padding: 3px 3px;
+  }
+  .ak {
+    padding: 5px;
+    width: 15%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+  }
+  .profile-image img {
+    border-radius: 50%;
+  }
+  .whole {
+    background-color: white;
+    width: 100%;
+    height: 99vh;
+  }
+  .footer {
+    background-color: black;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+  }
+  /* .mx-auto{
+      text-align: center;
+      position: absolute;
+  } */
+  :focus {
+    outline: none;
+  }
+  .home-nav {
+    background-color: black;
+  }
+  .img {
+    width: 50px;
+    margin: 8px;
+  }
+  @media (max-width: 760px) {
+    .ak {
+      background-color: darkgray;
+      padding: 2px;
+      height: 200px;
+      width: 41%;
+      height: 500px;
+    }
+    .news {
+      padding: 10px;
+      width: 50%;
+      position: absolute;
+      top: 70px;
+      left: 320px;
+      background-color: whitesmoke;
+    }
+  }
+  @media (max-width: 480px) {
+    .navbar {
+      width: 100%;
+    }
+    .whole {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: white;
+      height: 99vh;
+    }
+    .footer {
+      height: fit-content;
+      position: absolute;
+      bottom: 0;
+    }
+    .img {
+      margin: 2px;
+    }
+    .whole {
+      width: 100%;
+      height: 100vh;
+    }
+    body {
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+      height: 100vh;
+      background-color: black;
+    }
+    .container-fluid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .news {
+      padding: 5px;
+      background-color: whitesmoke;
+      width: fit-content;
+      position: absolute;
+      top: 260px;
+      left: 0%;
+    }
+    .ak {
+      background-color: darkgray;
+      padding: 2px;
+      height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .bios {
+      visibility: hidden;
+      /* padding: 5px;
+      background-color: whitesmoke;
+      width: fit-content;
+      position: absolute;
+      top: 380px;
+      left: 0%;
+      width: 100%; */
+    }
+    .bio {
+      margin: 0%;
+    }
+  }
+  

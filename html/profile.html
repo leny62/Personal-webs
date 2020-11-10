@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="https://kit.fontawesome.com/34c50f6b42.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/dashboard.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/cards.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/buttons.css" rel="stylesheet" type="text/css">
     <title>Dashboard</title>
   </head>
@@ -38,7 +36,7 @@
                 aria-haspopup="true" 
                 aria-expanded="false"
               >
-                <span>Menu</span> 
+                <span>Leny Pascal</span> 
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="../html/sign-up.html">Profile</a>
@@ -59,13 +57,13 @@
                             <a href="dashboard.html">
                                 <img src="../assets/GPS.png" class="img-responsive"alt="">
                                 Dashboard                             
-                            </a> 
+                            </a>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 content">
-                            <a href="profile.html">
+                            <a href="#">
                                 <img src="../assets/PersonMale.png" class="img-responsive"alt="">
                                 Profile                               
                             </a>
@@ -84,18 +82,42 @@
               </section>
 
               <section class="col-7 mt-5 ml-4" id="right-pane">
-                <h1>My Dashboard</h1>
-                <div class="dashboardCards">
-                  <div class="dashboardCard"> 
-                    <p>My Blogs</p>
-                    <i class="fas fa-blog fa-2x" alt="Users"></i>
-                     <p></p>
-                  </div>
-                  <div class="dashboardCard"> Views</div>
-                  <div class="dashboardCard"> Comments</div>
-                  <div class="dashboardCard"> Subscriptions</div>
-                </div>
+                  <div class="row">
+                      <div class="col-3">
+                          <div class="profile-image">
+                              <img src="../assets/PersonMale.png" alt="" class="img-fluid">
+                          </div>
+                      </div>
+                      
+                      <div class="col-5">
+                        <div class="nametag">
+                            <span id="userName">loading...</span><br>
+                            <span id="userEmail">loading...</span>
+                            <span>
+                                <input type="file" name="profilePic" id="pic" class="mt-5">
+                            </span>
+                        </div>
+                      </div>
 
+                      <div class="col-4 bioDescription">
+                          <span>Bio :</span>  
+                          <span class="bio mt-1">
+                              Lorem ipsum dolor sit, 
+                              amet consectetur adipisicing elit. 
+                              Inventore natus eaque quis.
+                              Quod, veritatis quaerat? Dolore incidunt
+                              
+                          </span>   
+                          <span>
+                                <button class="whiteButton">
+                                    <!-- <img src="../assets/PersonMale.png" class="img-responsive" alt="head"> -->
+                                    Edit Profile
+                                </button>
+                          </span>                   
+                      </div>
+
+                  </div>
+                  
               </section>
           </div>
       </div>

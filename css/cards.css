@@ -1,0 +1,25 @@
+.dashboardCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+  .dashboardCard {
+    width: 60%;
+    height: fit-content;
+    margin: 20px;
+    padding: 10px;
+    color: #78472C;
+    border: 3px solid #a7b5be;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.dashboardCard p {
+    padding: 5px;
+}
+
+.dashboardCard img {
+    width: 10%;
+}
