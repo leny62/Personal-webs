@@ -36,7 +36,7 @@
                   <a class="nav-link" href="../html/contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="../html/blog.html">Blogs</a>
+                  <a class="nav-link " href="../html/blogDisplay.html">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="../html/sign-in.html">Login</a>
@@ -48,37 +48,39 @@
           </nav>
     
     </section>
-
-    <section id="form">
-        <div class="container mt-md-5">
-            <div class="row offset-md-1">
-                <div class="col-md-9 box">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <H2>Sign up</H2>
-                            <p class="p">Have an account?</p>
-                            <a href="../html/sign-in.html"><input type="button" value="Log in" class="login whiteButton1"></a>
-                            <div class="messge" id="verifyError">passwords do not match</div>
+  </script>
+  <body>
+      <section id="form">
+          <div class="container mt-md-5">
+              <div class="row offset-md-1">
+                  <div class="col-md-9 box">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <H2>Sign up</H2>
+                              <p class="p">Have an account?</p>
+                              <a href="../html/sign-in.html"><input type="button" value="Log in" class="login whiteButton1"></a>
+                              <div class="messge" id="verifyError">passwords do not match</div>
+                          </div>
+                          <div class="col-md-8">
+                              <form class="inputfields" >
+                                  <label for="name">Name</label><br>
+                                  <input type="name" name="name" id="name" class="input"  required> <br>
+                                  <label for="email">email</label><br>
+                                  <input type="email" name="email" id="email" class="input"  required>
+                                  <label for="message">Create password</label><br>
+                                  <input type="Password" name="password" id="password" class="input"  required><br>
+                                  <label for="message">verify password</label><br>
+                                  <input type="Password" name="password" id="password2" class="input"  required>
+                                  <button type="button" class="button whiteButton1" id="button" >Sign up</button> 
+                                  <div id="error"></div>           
+                              </form>
+                          </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="inputfields" action="" onsubmit="event.preventDefault()">
-                                <label for="name">Name</label><br>
-                                <input type="name" name="name" id="name" class="input"><br>
-                                <label for="email">email</label><br>
-                                <input type="email" name="email" id="email" class="input">
-                                <label for="message">Create password</label><br>
-                                <input type="Password" name="password" id="password" class="input"><br>
-                                <label for="message">verify password</label><br>
-                                <input type="Password" name="password" id="password2" class="input">
-                                <button onclick="signUpUser()" class="button whiteButton1">Sign up</button>            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+                  </div>
+              </div>
+          </div>
+  
+      </section>
 
     <section id="footer">
         <div class="mx-auto">
@@ -118,6 +120,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="../js/Authentication.js"></script>
-    <script src="../js/sign-up.js"></script>
+    <!-- <script src="../js/sign-up.js"></script> -->
   </body>
 </html>

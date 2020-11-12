@@ -1,4 +1,3 @@
-
 let userName = document.getElementById('userName');
 let disp = document.getElementById('userName1');
 let userEmail = document.getElementById('userEmail');
