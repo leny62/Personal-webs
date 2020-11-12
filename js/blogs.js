@@ -29,7 +29,7 @@ function createBlog(){
     let blogContnent = document.getElementById('body').value;
     let blogOwner = authorName;
     let blogId = generateBlogId();
-    // let imageURL = ''
+    let imageURL = ''
     
     storage.ref(`blogs/${blogId}/blogImage.jpg`).put(blogImage).then(()=>{
         db.collection('Blogs').doc(`${blogId}`).set({
@@ -85,9 +85,9 @@ function dipslayBlogPosts(){
 
     fetchData();
 
-   let postTitle = document.getElementById('blogTitle');
-   let postImage = document.getElementById('blogImage');
-   let postBody = document.getElementById('blogContent');
+   let postTitle = document.getElementById('headingWrapper');
+   let postImage = document.getElementById('imageWrapper');
+   let postBody = document.getElementById('contentWrapper');
    let postDate = document.getElementById('dateWrapper');
    let postAuthor = document.getElementById('ownerWrapper');
        let size = blogs.length;
@@ -117,7 +117,7 @@ fetchData();
 }
 
 
-// setTimeout(()=>{
-//     dipslayBlogPosts();
-//     displayOtherBlogs();
-// },8000)
+setTimeout(()=>{
+    dipslayBlogPosts();
+    displayOtherBlogs();
+},8000)
