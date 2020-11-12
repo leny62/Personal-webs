@@ -54,7 +54,7 @@
   
       <div class="row">
         <div class="col-sm-2 col-sm-offset-5">
-          <div class="blog_title text-center">
+          <div class="blog_title">
             <h2>Blogs</h2>
           </div>
         </div>
@@ -93,12 +93,12 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="blog_news_cat pull-left">
-                          <small>Category <span></span></small>
+                          <!-- <small>Category <span></span></small> -->
                         </div>
                       </div>
                       <div class="col-xs-6">
-                        <div class="blog_news_readmore pull-right">
-                          <a class="btn btn-sm btn-warning" href="../html/blog.html">Read more</a>
+                        <div class="blog_news_readmore pull-right" id="readmore">
+                          <a class="btn btn-sm btn-warning" id="readmoreBtn" href="../html/blog.html">Read more</a>
                         </div>
                       </div>
   
@@ -138,7 +138,7 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="blog_news_cat pull-left">
-                          <small>Category <span></span></small>
+                          <!-- <small>Category <span></span></small> -->
                         </div>
                       </div>
                       <div class="col-xs-6">
@@ -183,7 +183,7 @@
                     <div class="row">
                       <div class="col-xs-6">
                         <div class="blog_news_cat pull-left">
-                          <small>Category <span></span></small>
+                          <!-- <small>Category <span></span></small> -->
                         </div>
                       </div>
                       <div class="col-xs-6">
@@ -199,10 +199,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>     
       <p class="blog_see_all text-center">
         <a class="btn btn-lg btn_outline" href="">
-          <span class="blog_icon"><i class="fa fa-file"></i> Read out the Blog</span>
+          <span class="blog_icon"><i class="fa fa-file"></i> Up</span>
         </a>
       </p>
     </div>
@@ -217,7 +217,30 @@
 </section>    
 </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+<script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+    authDomain: "capstone-dd58a.firebaseapp.com",
+    databaseURL: "https://capstone-dd58a.firebaseio.com",
+    projectId: "capstone-dd58a",
+    storageBucket: "capstone-dd58a.appspot.com",
+    messagingSenderId: "527554723520",
+    appId: "1:527554723520:web:7a6f7805de887f664b3725",
+    measurementId: "G-VDYQRM5XRR"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+  var auth = firebase.auth();
+  var storage = firebase.storage();
+</script>
+<script src="../js/blogCards.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </html>

@@ -1,4 +1,160 @@
-*{
+#main-section{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+}
+.trending-posts{
+    flex-basis: 70%;
+    justify-content: center;
+    
+}
+
+#form-input textarea,input{
+    width:100%;
+    border-radius: 3px;
+    padding:8px;
+    margin: 10px 0px;
+}
+
+#form-input textarea{
+    height: 120px;
+}
+
+.posts-list{
+    width: 100%;
+}
+
+.comment-btn button{
+   font-size: 17px;
+   padding: 8px 15px;
+   border: none;
+   border-radius: 3px;
+   background-color: rgb(44, 43, 43);
+   color: #fff;
+   margin-top: initial;
+    
+}
+
+
+.side-posts-header{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.side-posts{
+    flex-basis: 25%;
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+.post-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background: #fff;
+}
+
+.post-img img{
+    width:100%;
+}
+.post-text{
+    margin-top: 7px;
+}
+
+.parent .some .post-title h2{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 5px;
+    
+
+}
+
+.parent .some .content_summary p{
+  width: 100%;
+}
+.parent .some{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+ .blog_image img{
+    width: 10.1rem;
+    height: 8rem;
+} 
+
+.post-info{
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+
+
+
+
+@media (max-width:798px){
+    #main-section{
+        flex-direction: column;
+    }
+
+    .post-card{
+        flex-direction: row;
+    }
+
+    .post-img{
+        flex-basis: 60%;
+    }
+
+    .side-posts{
+        padding: 30px 80px;
+    }
+    .post-text{
+        padding: 0px 10px;
+        margin: 0;
+    }
+
+}
+
+@media (max-width:600px){
+    .side-posts{
+        padding: 30px 50px;
+    }
+    .post-card{
+        flex-direction: column;
+    }
+    .post-text{
+        margin: 10px;
+        padding: 0px 5px;
+    }
+
+   
+}
+
+
+
+@media (max-width:350px){
+    .side-posts{
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -26,4 +182,4 @@
     padding-top: 10px;
     
 }
-
+ */

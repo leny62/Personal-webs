@@ -38,6 +38,10 @@ function loginUser(){
     let password = document.getElementById('login-password').value;
 
     auth.signInWithEmailAndPassword(email, password).then((user)=>{
+        
+        localStorage.setItem('userName',user.user.displayName);
+        localStorage.setItem('userEmail',user.user.email);
+
         window.location.href = "../html/dashboard.html";
     }).catch((error)=>{
         alert(error)
