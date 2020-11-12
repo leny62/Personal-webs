@@ -40,7 +40,12 @@
       object-fit: cover;
   }
   
-  
+  #list-inline{
+    color: green;
+  }
+  #dateWrapper{
+    color: hotpink;
+  }
   .ind_blog article {
     padding: 10px;
     color: rgb(39, 34, 34);
@@ -94,7 +99,6 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-
   #readmore{
     text-align: center;
   }
