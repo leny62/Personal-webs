@@ -5,39 +5,41 @@
     padding-bottom: 200px;
 }
 .blog_area {
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    /* background-image: url("../assets/tech.jpg"); */
-    padding: 50px 0 80px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
+    /* background-color: #d13535; */
+    /* padding: 50px 0 20% 0; */
+    text-align: center;
+    /* color: green; */
+    /* display: flex; */
   }
+
+  /* .container{
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+  .container .blog_area{
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
+  } */
   
   .blog_title h2 {
-    border-bottom: 8px solid white;
+    /* border-bottom: 8px solid white;
     margin-bottom: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
     font-style: bold;
     font-size: 8rem;
-    margin-left: 24rem;
+    text-align: center;
+    /* margin-left: 24rem; */
   }
   .blog-image{
-      width: 22vw;
-      height: 25vh;
+      width: 100%;
+      height: 20vh;
+      object-fit: cover;
   }
   
-  .ind_blog {
-    background: #ffffff;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
-  }
   
   .ind_blog article {
     padding: 10px;
@@ -86,6 +88,78 @@
     background: #20515b;
     color: #ffffff;
   }
-  
-  
+
+  .blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #readmore{
+    text-align: center;
+  }
+
+  #readmoreBtn{
+    text-align: center;
+    margin: 0 100%;
+  }
   /*End Blog Page Area*/
+
+  .ind_blog {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  /* Responsiveness with media queries */
+
+  @media only screen and (max-width: 945px) {
+    .blog {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .ind_blog {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+      width: 300%;
+    }
+  }
+
+  @media (max-width: 790px) {
+    
+    .ind_blog {
+      background: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+      width: 110%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    /* .blog_area {
+      background-color: #ffffff;
+      color: green;
+      padding: 20px 0 80px 0;
+      padding-left: 2px;
+      padding-right: 60rem;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-right: 60rem;
+      margin-left: 2px;
+    } */
+    .blog {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+  
