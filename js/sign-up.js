@@ -1,33 +1,77 @@
-// const signUpForm=document.getElementsByClassName("Form");
-// signUpForm.addEventlistener('submit'), (e)=>{
-//     e.preventDefault();
-//     const email= document.getElementById(email).value;
-//     const password= document.getElementById(password).value;
-//     const promise= auth.createUserWithEmailAndPassword(email, password)
-//     .then(resultData =>console.log(resultData))
-//     .catch(error =>console.log(error));
-// }
-let passWordv = document.getElementById('password2');
-let passWord = document.getElementById('password');
-let name = document.getElementById('name');
-let verify = document.getElementsByClassName('messge');
-let email = document.getElementById('email');
+function signUpUser() {
 
-email.onchange = (e) => {
-    console.log(email);
-    if (!email.includes('@')){
-        verify.style.visibility = 'visible';
-        verify.innerHTML = 'email must be valid';
-    }
-    else {
-        verify.style.visibility = 'hidden';
-    }
+	let signupName = document.getElementById('name').value;
+	let signUpEmail = document.getElementById('email').value;
+	let signUpPass = document.getElementById('password').value;
+	let signUpPassVer = document.getElementById('password2').value;
+	if (!signupName) {
+		let p = document.createElement('p');
+		p.style.color = "red";
+		p.innerHTML = "Please input Name";
+		document.getElementById("error").appendChild(p);
+		setTimeout(() => {
+			p.innerHTML = '';
+		}, 9000);
+	}
+	else if (!signUpEmail) {
+		let p = document.createElement('p');
+		p.style.color = "red";
+		p.innerHTML = "Please input Email";
+		document.getElementById("error").appendChild(p);
+		setTimeout(() => {
+			p.innerHTML = '';
+		}, 9000);
+	}
+	else if (!signUpPass) {
+		let p = document.createElement('p');
+		p.style.color = "red";
+		p.innerHTML = "Please input Password";
+		document.getElementById("error").appendChild(p);
+		setTimeout(() => {
+			p.innerHTML = '';
+		}, 9000);
+	}
+	else if (!signUpPassVer) {
+		let p = document.createElement('p');
+		p.style.color = "red";
+		p.innerHTML = "Please confirm password";
+		document.getElementById("error").appendChild(p);
+		setTimeout(() => {
+			p.innerHTML = '';
+		}, 9000);
+	}
+	else if (signUpPassVer !== signUpPass) {
+		let p = document.createElement('p');
+		p.style.color = "red";
+		p.innerHTML = "Passwords do not match";
+		document.getElementById("error").appendChild(p);
+		setTimeout(() => {
+			p.innerHTML = '';
+		}, 9000);
+
+	}
+	else {
+		firebase.auth().createUserWithEmailAndPassword(signUpEmail, signUpPass).then((user) => {
+			let currentUser = auth.currentUser;
+			if (currentUser) {
+				currentUser.updateProfile({
+					displayName: signupName
+				}).then(() => {
+					window.alert(`welcome ${signupName}`);
+					window.location.href = "../html/dashboard.html";
+
+				}).catch((error) => {
+					alert(error);
+				});
+			}
+		}).catch((error) => {
+			alert(error);
+		});
+	}
+
+
+
 }
-passWordv.oninput = function () {
-    if (passWord !== passWordv) {
-        verify.style.visibility = 'visible';
-        verify.innerHTML = 'passwords do not match';
-    } else {
-        verify.style.visibility = 'hidden';
-    }
-}
+document.getElementById('button').addEventListener('click', () => {
+	signUpUser();
+});

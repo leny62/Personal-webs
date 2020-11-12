@@ -1,137 +1,465 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://kit.fontawesome.com/34c50f6b42.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/Adashboard.css">
+        <link rel="stylesheet" typetype="text/css" href="../css/dashboardFooter.css">
+        <title>Dashboars</title>
+    </head>
 
-    <script src="https://kit.fontawesome.com/34c50f6b42.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/dashboard.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/cards.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/buttons.css" rel="stylesheet" type="text/css">
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../index.html"><img src="../assets/Logo.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../html/messages.html">Messages <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a 
-                class="nav-link dropdown-toggle"
-                href="#" id="navbarDropdownMenuLink" 
-                data-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false"
-              >
-                <span>Menu</span> 
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="../html/sign-up.html">Profile</a>
-                <a class="dropdown-item" href="#">Change mode</a>
-                <a class="dropdown-item" onclick="logOutUser()">Logout</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <body>
+        <section id="nav-container">
+            <div class="logo">
+                Admin
+            </div>
+            <div class="nav-burger">
+                <i class="fa fa-bars" onclick="displayAside()"></i>
+            </div>
+        </section>
 
-      <div class="container-fluid mainSection">
-          <div class="row">
-              <section class="col-2" id="left-pane">
+        <section id="main">
+            <div class="main-left" id="main-left">
+                <div class="aside-top">
+                    <div class="aside-burger">
+                        B
+                    </div>
+                    <div class="logo">
+                        Admin
+                    </div>
+                    <div class="aside-tabs">
+                        <div class="tab active" onclick="dashPart(0)">
+                            Dashboard
+                        </div>
 
-                    <div class="row">
-                        <div class="col-12 content">
-                            <a href="dashboard.html">
-                                <img src="../assets/GPS.png" class="img-responsive"alt="">
-                                Dashboard                             
-                            </a> 
+                        <div class="tab" onclick="dashPart(1)">
+                            Messages
+                        </div>
+
+                        <div class="tab" onclick="dashPart(2)">
+                            Blogs
+                        </div>
+
+                        <div class="tab" onclick="dashPart(3)">
+                            User Profile
                         </div>
                     </div>
+                </div>
+                <div class="aside-bottom">
+                    <div class="aside-links">
 
-                    <div class="row">
-                        <div class="col-12 content">
-                            <a href="profile.html">
-                                <img src="../assets/PersonMale.png" class="img-responsive"alt="">
-                                Profile                               
-                            </a>
+                        <div class="link" onclick="logOutUser()">
+                            Logout
+                        </div>
+
+                        <a href="../index.html"><div class="link">
+                            Home
+                        </div></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-right">
+
+                <div class="dash-part">
+                    <div class="part-title">
+                        Dashboard
+                    </div>
+                    <div class="part-body1">
+                        <div class="cards-area">
+                            <div class="message" id="carD">
+                                <div class="user-avatar1">
+                                    <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                                    
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Users
+                                    </div>
+                                    <div class="message-content">
+                                        55
+                                    </div>
+                                    <div class="message-time">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message" id="carD2">
+                                <div class="user-avatar">
+                                    <i class="far fa-eye fa-5x"></i>
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Viewers
+                                    </div>
+                                    <div class="message-content">
+                                       77
+                                    </div>
+                                    <div class="message-time">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message" id="carD3">
+                                <div class="user-avatar">
+                                    <i class="fas fa-blog fa-5x"></i>
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Blog visitors
+                                    </div>
+                                    <div class="message-content">
+                                        1000+
+                                    </div>
+                                    <div class="message-time">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-12 content">
-                            <a href="edit-blogs.html">
-                                <img src="../assets/spotify2.png" class="img-responsive"alt="">
-                                New article                                
-                            </a>
-                        </div>
-                    </div>
-                    
-              </section>
-
-              <section class="col-7 mt-5 ml-4" id="right-pane">
-                <h1>My Dashboard</h1>
-                <div class="dashboardCards">
-                  <div class="dashboardCard"> 
-                    <p>My Blogs</p>
-                    <i class="fas fa-blog fa-2x" alt="Users"></i>
-                     <p></p>
-                  </div>
-                  <div class="dashboardCard"> Views</div>
-                  <div class="dashboardCard"> Comments</div>
-                  <div class="dashboardCard"> Subscriptions</div>
                 </div>
 
-              </section>
-          </div>
-      </div>
-      <div class="container-fluid footer">
-          <div class="footer">
-              <span class="mx-auto">&copy; 2020 Leny Pascal Ihirwe</span>
-          </div>
-      </div>
-      <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
-      <!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
-      <script>
-       var firebaseConfig = {
-          apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
-          authDomain: "capstone-dd58a.firebaseapp.com",
-          databaseURL: "https://capstone-dd58a.firebaseio.com",
-          projectId: "capstone-dd58a",
-          storageBucket: "capstone-dd58a.appspot.com",
-          messagingSenderId: "527554723520",
-          appId: "1:527554723520:web:7a6f7805de887f664b3725",
-          measurementId: "G-VDYQRM5XRR"
-        };
+                    </div>
+                </div>
+
+                <div class="dash-part">
+                    <div class="part-title">
+                        Messages
+                    </div>
+                    <div class="part-body">
+                        <div class="messages-area">
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="Profile">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Leny 62
+                                    </div>
+                                    <div class="message-content">
+                                        Hi leny! i Hope you are soing well this time. 
+                                        Have nice weekend. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae.
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Ihirwe Rw
+                                    </div>
+                                    <div class="message-content">
+                                        Hi leny! i Hope you are doing well this time. 
+                                        Have nice weekend. 
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Christian
+                                    </div>
+                                    <div class="message-content">
+                                        Yolla! are home right now? I want to ask you
+                                        a favor mn 
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-part">
+                    <div class="part-title">
+                        Blogs
+                    </div>
+                    <div class="part-body">
+                        <div class="blogs-area">
+                            <div class="blog">
+                                <div class="blog-img">
+                                    <img src="login3.jpg" alt="">
+                                </div>
+
+                                <div class="blog-btns">
+                                    <div class="btn-left">
+                                        <div class="view-btn">
+                                            <button>View</button> 
+                                        </div>
+                                    </div>
+                                    <div class="btns-right">
+                                        <div class="edit-btn">
+                                            <button>Edit</button>
+                                        </div>
+
+                                        <div class="delete-btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-info">
+                                    <div class="blog-title">
+                                        All you need to know about your computer
+                                    </div>
+                                    <div class="blog-date">
+                                        Feb 31, 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="blog">
+                                <div class="blog-img">
+                                    <img src="../assets/login3 (1).jpg" alt="">
+                                </div>
+
+                                <div class="blog-btns">
+                                    <div class="btn-left">
+                                        <div class="view-btn">
+                                            <button>View</button> 
+                                        </div>
+                                    </div>
+                                    <div class="btns-right">
+                                        <div class="edit-btn">
+                                            <button>Edit</button>
+                                        </div>
+
+                                        <div class="delete-btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-info">
+                                    <div class="blog-title">
+                                        All you need to know about your computer
+                                    </div>
+                                    <div class="blog-date">
+                                        Feb 31, 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="blog">
+                                <div class="blog-img">
+                                    <img src="../assets/login3 (1).jpg" alt="">
+                                </div>
+
+                                <div class="blog-btns">
+                                    <div class="btn-left">
+                                        <div class="view-btn">
+                                            <button>View</button> 
+                                        </div>
+                                    </div>
+                                    <div class="btns-right">
+                                        <div class="edit-btn">
+                                            <button>Edit</button>
+                                        </div>
+
+                                        <div class="delete-btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-info">
+                                    <div class="blog-title">
+                                        All you need to know about your computer
+                                    </div>
+                                    <div class="blog-date">
+                                        Feb 31, 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="blog">
+                                <div class="blog-img">
+                                    <img src="../assets/login3 (1).jpg" alt="">
+                                </div>
+
+                                <div class="blog-btns">
+                                    <div class="btn-left">
+                                        <div class="view-btn">
+                                            <button>View</button> 
+                                        </div>
+                                    </div>
+                                    <div class="btns-right">
+                                        <div class="edit-btn">
+                                            <button>Edit</button>
+                                        </div>
+
+                                        <div class="delete-btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-info">
+                                    <div class="blog-title">
+                                        All you need to know about your computer
+                                    </div>
+                                    <div class="blog-date">
+                                        Feb 31, 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="blog">
+                                <div class="blog-img">
+                                    <img src="../assets/login3 (1).jpg" alt="">
+                                </div>
+
+                                <div class="blog-btns">
+                                    <div class="btn-left">
+                                        <div class="view-btn">
+                                            <button>View</button> 
+                                        </div>
+                                    </div>
+                                    <div class="btns-right">
+                                        <div class="edit-btn">
+                                            <button>Edit</button>
+                                        </div>
+
+                                        <div class="delete-btn">
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-info">
+                                    <div class="blog-title">
+                                        All you need to know about your computer
+                                    </div>
+                                    <div class="blog-date">
+                                        Feb 31, 2021
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-part">
+                    <div class="part-title">
+                        Profile Management
+                    </div>
+                    <div class="part-body">
+                        <div class="messages-area">
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="Profile">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Leny 62
+                                    </div>
+                                    <div class="message-content">
+                                        Hi leny! i Hope you are soing well this time. 
+                                        Have nice weekend. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae.
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Ihirwe Rw
+                                    </div>
+                                    <div class="message-content">
+                                        Hi leny! i Hope you are doing well this time. 
+                                        Have nice weekend. 
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <img src="../assets/PersonMale.png" alt="">
+                                </div>
+                                <div class="message-body">
+                                    <div class="message-sender">
+                                        Christian
+                                    </div>
+                                    <div class="message-content">
+                                        Yolla! are home right now? I want to ask you
+                                        a favor mn 
+                                    </div>
+                                    <div class="message-time">
+                                        Feb 30,2020 12:23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="mx-auto">
+              Copyright &copy; Leny Pascal, 2020. All rights reserved
+            </div>
+        </section>   
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
         
-        firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
-        //var auth = firebase.auth();
-        var storage = firebase.storage();
-      </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="../js/Authentication.js"></script>
-    <script src="../js/dashboard.js"></script>
-  </body>
+        <!-- <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script> -->
+        
+    <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+            authDomain: "capstone-dd58a.firebaseapp.com",
+            databaseURL: "https://capstone-dd58a.firebaseio.com",
+            projectId: "capstone-dd58a",
+            storageBucket: "capstone-dd58a.appspot.com",
+            messagingSenderId: "527554723520",
+            appId: "1:527554723520:web:7a6f7805de887f664b3725",
+            measurementId: "G-VDYQRM5XRR"
+          };
+          firebase.initializeApp(firebaseConfig);
+          var db = firebase.firestore();
+          // var auth = firebase.auth();
+          var storage = firebase.storage();
+      
+    </script> 
+        <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+        <script src="../js/Adashboard.js"></script>
+        <script src="../js/Authentication.js"></script>
+        <script src="../js/dashboardCheck.js"></script>  
+        <!-- <script src="../js/dashboard.js"></script> -->
+    </body>
 </html>
