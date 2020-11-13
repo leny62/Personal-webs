@@ -287,7 +287,149 @@ a{
     text-decoration: none;
 }
 
+/* css for profile management */
 
+.pane-item{
+    padding:20px 40px;
+    display: none;
+
+}
+
+.pane-item-title{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.pane-item-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+.profile-section{
+    display: flex;
+}
+
+.profile-left, .profile-right{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.profile-left{
+    flex-basis: 20%;
+}
+.profile-right{
+    flex-basis: 80%;
+    margin-left: 50px;
+    
+}
+.profile-pic-section{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.profile-img{
+    margin-bottom: 7px;
+}
+.profile-img img{
+    width:100%;
+    height: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.skills{
+    margin-top: 40px;
+}
+
+ul.selected-skills{
+    margin-left: 5px;
+    padding: 7px 5px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+.skills ul li{
+    list-style: none;
+    margin-bottom: 3px;
+}
+.add-skill{
+    margin-left: 7px;
+}
+.skill-input{
+    margin-bottom: 10px;
+    display: none;
+    transition: 1s;
+}
+
+.skill-input.show{
+    display: block;
+}
+
+.skill-input input[type="text"], .skill-input textarea{
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(61, 111, 218);
+}
+
+.skill-input input[type="text"]{
+    height: 24px;
+    padding: 1px 5px;
+}
+
+.skill-input textarea{
+    height: 100px;
+    padding: 2px 5px;
+}
+
+.skill-action-btns{
+    display: flex;
+}
+.add-btn, .save-btn{
+    margin: 0px 3px;
+    padding: 1px 6px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-btn{
+    border: 1px solid #0b41a5;
+    color: #0b41a5ba;
+}
+
+.add-btn.cancel-btn{
+    border: 1px solid #a50b18;
+    color: #a50b18;
+}
+
+.save-btn{
+    border: 1px solid #07ad1d;
+    color: #07ad1d;
+}
+.inputs-section{
+    margin-top: 10px;
+}
+.control{
+    margin-bottom: 7px;
+}
+.control input{
+    width: 300px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(61, 111, 218);
+    height: 24px;
+    padding: 1px 5px;
+    margin-top: 4px;
+}
 
 
 
@@ -325,11 +467,39 @@ a{
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+    .profile-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-right{
+        flex-basis: 80%;
+        margin-left: 20px;
+        
+    }
+    .pane-item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        
+    }
+    .profile-left, .profile-right{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
     
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 510px) {
+    .profile-right{
+        flex-basis: 80%;
+        margin-left: 10px;
+        
+    }
     
 }
 

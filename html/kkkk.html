@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Blog content">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/blog.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>BLOG | LenyIhirwe ltd</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/Logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/about.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/sign-in.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="../html/blog.html">Blogs</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="heading">
+            <h1>Leny's Blog</h1>
+        </div>
+    </section>
+    <section id="blogDisplayer">
+            <div class="col1">
+              <h1 id="blogTitle">Blogs</h1>
+              <div class="main-post-item">
+                <H2 class="blog-title" id="headingWrapper"></H2>
+                <img src="" alt="" id="imageWrapper">
+                <small> <span id="dateWrapper">   </span>  by <span id="ownerWrapper">   </span></small>
+                <p id="contentWrapper">
+  
+                </p>
+               
+              </div> 
+            </div>
+          
+         <div class="col2">
+          <div class="others" id="others">
+            <div id="blogTitle"></div>
+            <img id="blogImage">
+            <div id="blogContent"></div>
+         </div>
+    </div>
+    </section>
+  <footer>
+      &copy; 2020 Leny Pascal Ihirwe
+  </footer>
+ 
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+  <script>
+   var firebaseConfig = {
+      apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
+      authDomain: "capstone-dd58a.firebaseapp.com",
+      databaseURL: "https://capstone-dd58a.firebaseio.com",
+      projectId: "capstone-dd58a",
+      storageBucket: "capstone-dd58a.appspot.com",
+      messagingSenderId: "527554723520",
+      appId: "1:527554723520:web:7a6f7805de887f664b3725",
+      measurementId: "G-VDYQRM5XRR"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+    var storage = firebase.storage();
+  </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script src="../js/blogs.js"></script>
+   <script  src="../js/blogDisplay.js"></script>
+ </body>
+</html>

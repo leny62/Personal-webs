@@ -37,12 +37,12 @@ a{
     height: 40px;
     width: 250px;
     padding:5px 10px;
+    border: none;
 }
 .textarea{
     border-radius: 30px;
     width: 250px;
     height: 80px;
-
 }
 .btn{
     border:  black;
@@ -52,7 +52,7 @@ a{
 :focus{
     outline: none;
 }    
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
     .downFooter{
     position: relative;
     bottom: 0;
@@ -61,4 +61,4 @@ a{
         position: absolute;
         padding-bottom: 0%;
     }
-}
+} */

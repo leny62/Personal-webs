@@ -133,55 +133,21 @@
                         <div class="messages-area">
                             <div class="message">
                                 <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="Profile">
+                                    <i class="fas fa-envelope-open-text fa-5x"></i>
                                 </div>
-                                <div class="message-body">
+                                <div class="message-body" id="enquiry">
                                     <div class="message-sender">
-                                        Leny 62
+                                        
                                     </div>
                                     <div class="message-content">
-                                        Hi leny! i Hope you are soing well this time. 
-                                        Have nice weekend. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae.
+                                        
                                     </div>
                                     <div class="message-time">
-                                        Feb 30,2020 12:23
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="message">
-                                <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="">
-                                </div>
-                                <div class="message-body">
-                                    <div class="message-sender">
-                                        Ihirwe Rw
-                                    </div>
-                                    <div class="message-content">
-                                        Hi leny! i Hope you are doing well this time. 
-                                        Have nice weekend. 
-                                    </div>
-                                    <div class="message-time">
-                                        Feb 30,2020 12:23
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message">
-                                <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="">
-                                </div>
-                                <div class="message-body">
-                                    <div class="message-sender">
-                                        Christian
-                                    </div>
-                                    <div class="message-content">
-                                        Yolla! are home right now? I want to ask you
-                                        a favor mn 
-                                    </div>
-                                    <div class="message-time">
-                                        Feb 30,2020 12:23
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -194,7 +160,7 @@
                         <div class="blogs-area">
                             <div class="blog">
                                 <div class="blog-img">
-                                    <img src="login3.jpg" alt="">
+                                    <img src="../assets/login2.jpg" alt="Blog image">
                                 </div>
 
                                 <div class="blog-btns">
@@ -227,7 +193,7 @@
 
                             <div class="blog">
                                 <div class="blog-img">
-                                    <img src="../assets/login3 (1).jpg" alt="">
+                                    <img src="../assets/login4 (1).jpg" alt="">
                                 </div>
 
                                 <div class="blog-btns">
@@ -260,7 +226,7 @@
 
                             <div class="blog">
                                 <div class="blog-img">
-                                    <img src="../assets/login3 (1).jpg" alt="">
+                                    <img src="../assets/close-up-photography-of-parked-motorcycle-1413412.jpg" alt="">
                                 </div>
 
                                 <div class="blog-btns">
@@ -364,60 +330,79 @@
                     <div class="part-title">
                         Profile Management
                     </div>
-                    <div class="part-body">
-                        <div class="messages-area">
-                            <div class="message">
-                                <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="Profile">
-                                </div>
-                                <div class="message-body">
-                                    <div class="message-sender">
-                                        Leny 62
+                        <!-- <li class="burger" onclick="dropSideNav()"><i class="fa fa-bars"></i></li> -->
+                        <!-- <div class="pane-item-title">
+                            Settings
+                        </div> -->
+                        <div class="pane-item-content" style="overflow-x: auto;">
+                           <div class="profile-section">
+                                <div class="profile-left">
+                                    <div class="profile-pic-section">
+                                        <div class="profile-img">
+                                            <img src="../assets/christopher-gower-vjMgqUkS8q8-unsplash.jpg" alt="">
+                                        </div>
+                                        <div class="select-img-btn">
+                                            <input type="file" name="picture" id="picture">
+                                        </div>
                                     </div>
-                                    <div class="message-content">
-                                        Hi leny! i Hope you are soing well this time. 
-                                        Have nice weekend. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vitae.
-                                    </div>
-                                    <div class="message-time">
-                                        Feb 30,2020 12:23
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message">
-                                <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="">
-                                </div>
-                                <div class="message-body">
-                                    <div class="message-sender">
-                                        Ihirwe Rw
-                                    </div>
-                                    <div class="message-content">
-                                        Hi leny! i Hope you are doing well this time. 
-                                        Have nice weekend. 
-                                    </div>
-                                    <div class="message-time">
-                                        Feb 30,2020 12:23
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message">
-                                <div class="user-avatar">
-                                    <img src="../assets/PersonMale.png" alt="">
-                                </div>
-                                <div class="message-body">
-                                    <div class="message-sender">
-                                        Christian
-                                    </div>
-                                    <div class="message-content">
-                                        Yolla! are home right now? I want to ask you
-                                        a favor mn 
-                                    </div>
-                                    <div class="message-time">
-                                        Feb 30,2020 12:23
+        
+                                    <div class="skills">
+                                        <div class="skills-title title">
+                                            Skills
+                                        </div>
+                                        <ul class="selected-skills">
+                                            <li>PHP</li>
+                                            <li>Javascript</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                        <div class="add-skill">
+                                            <div class="skill-input" id="skill-input">
+                                                <input type="text" name="slills-name" id="skill-name" placeholder="Write a skill or tallent"><br>
+                                                <textarea name="skill-description" id="skill-description" placeholder="Describe the skill, or talent here."></textarea><br>
+                                                <input type="file" name="skill-image" id="skill-image">
+                                            </div>
+                                            <div class="skill-action-btns">
+                                                <button class="add-btn" id="add-btn" onclick="toggleInput()">Add+</button>
+                                                <button class="save-btn">Save</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="profile-right">
+                                    <div class="right-title title">
+                                        Pesonal Information
+                                    </div>
+                                    <div class="inputs-section">
+                                        <div class="control">
+                                            <label for="username">Username</label><br>
+                                            <input type="text" name="username" id="username">
+                                        </div>
+        
+                                        <div class="control">
+                                            <label for="email">Email</label><br>
+                                            <input type="email" name="email" id="email">
+                                        </div>
+        
+                                        <div class="control">
+                                            <label for="phone">Mobile phone</label><br>
+                                            <input type="text" name="phone" id="phone">
+                                        </div>
+        
+                                        <div class="control">
+                                            <label for="password1">New Password</label><br>
+                                            <input type="password" name="password1" id="password1">
+                                        </div>
+        
+                                        <div class="control">
+                                            <label for="password2">Confirm Password</label><br>
+                                            <input type="password" name="password2" id="password2">
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
                         </div>
+                    </div>
                     </div>
                 </div>
 
@@ -459,7 +444,8 @@
         <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script src="../js/Adashboard.js"></script>
         <script src="../js/Authentication.js"></script>
-        <script src="../js/dashboardCheck.js"></script>  
+        <script src="../js/dashboardCheck.js"></script> 
+        <script src="../js/contact.js"></script>   
         <!-- <script src="../js/dashboard.js"></script> -->
     </body>
 </html>
