@@ -45,6 +45,15 @@
                         <div class="tab" onclick="dashPart(3)">
                             User Profile
                         </div>
+                        <div class="tab" onclick="dashPart(4)">
+                            User Management
+                        </div>
+
+                        <div class="tab">
+                            <a href="../html/edit-blogs.html">
+                            New article                                
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="aside-bottom">
@@ -158,8 +167,8 @@
                     </div>
                     <div class="part-body">
                         <div class="blogs-area">
-                            <div class="blog">
-                                <div class="blog-img">
+                            <div class="blog" id="blogs-area">
+                                <div class="blog-img" id="blog-img">
                                     <img src="../assets/login2.jpg" alt="Blog image">
                                 </div>
 
@@ -181,10 +190,10 @@
                                 </div>
 
                                 <div class="blog-info">
-                                    <div class="blog-title">
+                                    <div class="blog-title" id="blog-title">
                                         All you need to know about your computer
                                     </div>
-                                    <div class="blog-date">
+                                    <div class="blog-date" id="blog-date">
                                         Feb 31, 2021
                                     </div>
                                 </div>
@@ -326,6 +335,35 @@
                     </div>
                 </div>
 
+                <!-- Creating Blogs -->
+
+                <!-- <div class="dash-part">
+                    <div class="part-title">
+                        New article
+                    </div>
+                    <div class="part-body">
+                        <div class="messages-area">
+                            <div class="message">
+                                <div class="user-avatar">
+                                    <i class="fas fa-envelope-open-text fa-5x"></i>
+                                </div>
+                                <div class="message-body" id="enquiry">
+                                    <div class="message-sender">
+                                        
+                                    </div>
+                                    <div class="message-content">
+                                        
+                                    </div>
+                                    <div class="message-time">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> -->
+
                 <div class="dash-part">
                     <div class="part-title">
                         Profile Management
@@ -407,6 +445,125 @@
                 </div>
 
                     </div>
+                    <div class="dash-part">
+                        <div class="part-title">
+                            User management
+                        </div>
+                        <div class="part-body">
+    
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                            <div class="user">
+                                <div class="user-info">
+                                    <div class="username">
+                                        Leny Pascal
+                                    </div>
+                                    <div class="email">
+                                        leny62@gmail.com
+                                    </div>
+                                </div>
+                                <div class="delete-icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+    
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
@@ -415,17 +572,13 @@
               Copyright &copy; Leny Pascal, 2020. All rights reserved
             </div>
         </section>    -->
-        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
-        
-        <!-- <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script> -->
-        
-    <script>
-          // Your web app's Firebase configuration
-          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-          var firebaseConfig = {
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script> -->
+        <script>
+         var firebaseConfig = {
             apiKey: "AIzaSyD5MrutxnjZhjdiPeTG-qFp2Kbrob_1QpY",
             authDomain: "capstone-dd58a.firebaseapp.com",
             databaseURL: "https://capstone-dd58a.firebaseio.com",
@@ -435,16 +588,18 @@
             appId: "1:527554723520:web:7a6f7805de887f664b3725",
             measurementId: "G-VDYQRM5XRR"
           };
+          
           firebase.initializeApp(firebaseConfig);
           var db = firebase.firestore();
-          // var auth = firebase.auth();
+          var auth = firebase.auth();
           var storage = firebase.storage();
-      
+        </script>
     </script> 
         <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script src="../js/Adashboard.js"></script>
         <script src="../js/Authentication.js"></script>
-        <script src="../js/dashboardCheck.js"></script> 
+        <script src="../js/dashboardCheck.js"></script>
+        <script src="../js/dashBoardBlogs.js"></script>  
         <script src="../js/contact.js"></script>   
         <!-- <script src="../js/dashboard.js"></script> -->
     </body>
