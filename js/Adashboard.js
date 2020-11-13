@@ -2,13 +2,14 @@ let asideNav= document.getElementById('main-left');
 let topnav= document.getElementById('nav-container');
 let dashParts= document.getElementsByClassName('dash-part');
 let tabs= document.getElementsByClassName('tab');
-dashParts[2].style.display='block';
+dashParts[3].style.display='block';
 function displayAside(){
     asideNav.classList.add('responsive');
     asideNav.style.display='flex';
     topnav.style.display='none';
 
 }
+
 function toggleInput(){
     var btn=document.getElementById("add-btn");
     var input= document.getElementById("skill-input");
@@ -49,3 +50,14 @@ $(document).mouseup(function(e)
     }
   
 });
+
+let trashes= document.getElementsByClassName('fa-trash');
+for( let i=0; i<trashes.length;i++){
+     trashes[i].addEventListener('click', (e)=>{
+        trashes[i].closest('.user').remove();
+       alert('user removed');
+
+    });
+}
+  
+

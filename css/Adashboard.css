@@ -112,7 +112,8 @@
 .dash-part{
     margin: 30px;
     display: none;
-}
+    width: 100%;
+}    
 
 .part-title{
     font-size: 25px;
@@ -146,7 +147,7 @@
     justify-content: space-between;
     padding: 50px;
     margin: 30px;
-    border-radius: 8%;
+    /* border-radius: 8%; */
 }
 #carD2{
     /* background-color: lawngreen; */
@@ -286,6 +287,39 @@ a{
     color: rgb(199, 199, 199);
     text-decoration: none;
 }
+
+/* css for user management */
+
+.user{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.user:nth-child(even){
+    background-color: rgb(22, 90, 238);
+    color: rgb(241, 239, 239);
+}
+
+.user-info{
+    display: flex;
+    flex-basis: 83%;
+    margin-left: 15px;
+    
+}
+
+.username, .email{
+    flex-basis: 50%;
+    display: flex;
+    
+}
+
+.delete-icon{
+    display: flex;
+    flex-basis: 13%;
+
+}
+
 
 /* css for profile management */
 
@@ -503,10 +537,74 @@ ul.selected-skills{
     
 }
 
-@media only screen and (max-width: 380px) {
-    
+@media only screen and (max-width: 1220px) {
+    .cards-area{
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+    #carD{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 30px;
+        /* border-radius: 8%; */
+    }
+    #carD2{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 30px;
+    }
+    #carD3{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 30px;
+    }
 }
 
-@media only screen and (max-width: 350px) {
-    
+@media only screen and (max-width: 365px) {
+    .cards-area{
+        color: white;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+    }
+    #carD{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        margin: 30px;
+        /* border-radius: 8%; */
+    }
+    #carD2{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 30px;
+    }
+    #carD3{
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        margin: 30px;
+    }
 }
