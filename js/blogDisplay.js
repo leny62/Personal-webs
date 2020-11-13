@@ -1,4 +1,3 @@
-
 // let db = firebase.firestore();
 // let storage = firebase.storage();
 // let auth = firebase.auth();
@@ -100,14 +99,14 @@ function uploadImage(event){
             ks = summary;
         }
        otherBlogContainer.innerHTML+=`
-       <div class="parent">
+       <div class="parent" onclick="openSingleBlog('${blog.title}')">
        <div class="blog_image">
        <img src="${blog.imageSrc}" alt="Blog image">
       </div>
            <div class="some">
-           <div class="post-title">
-           <h2>${blog.title}</h2>
-          </div>
+          
+           <h2 class="post-title">${blog.title}</h2>
+          
           <div class="content_summary">
            <p>${ks}</p>  
           </div> 
@@ -116,6 +115,8 @@ function uploadImage(event){
          `
     });
     //console.log(`This is the length of the fetched Items ${otherBlogContainer.length}`);
+    console.log(`AFTER FETCHING THE DATABASE`);
+    console.log(blogs);
    
 }
   
@@ -162,6 +163,23 @@ function uploadImage(event){
          postAuthor.innerHTML = blogs[size-1].owner;
      
   }
+  function openSingleBlog(testText){
+    var counter = 0;
+    let contentWrapper = document.getElementById('contentWrapper');
+    let imageWrapper = document.getElementById('imageWrapper');
+    let headingWrapper = document.getElementById(`headingWrapper`);
+    for(counter = 0; counter < blogs.length; counter+=1){
+        let goOn = false;
+        if(blogs[counter].title == String(testText)){
+           headingWrapper.innerHTML = blogs[counter].title;
+           contentWrapper.innerHTML = blogs[counter].blogContent;
+           imageWrapper.src = blogs[counter].imageSrc;
+           goOn = true;
+          break;
+        }
+        if(goOn) break;
+    }
+  }
   
   
   fetchData();
@@ -172,5 +190,3 @@ function uploadImage(event){
       dipslayBlogPosts()
       displayOtherBlogs()
   },5000)
-
-
