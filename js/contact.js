@@ -54,16 +54,17 @@ function validate(){
     }
 
     function getEnquiries(){
-      let table = document.getElementById('enquiryTable');
+      let form = document.getElementById('enquiry');
       db.collection('enquiries').get().then((enquiries)=>{
         enquiries.forEach(enquiry => {
-          table.innerHTML+= `
-          <tr>
-          <td>${enquiry.data().name}</td>
-          <td>${enquiry.data().email}</td>
-          <td>${enquiry.data().message}</td>
-          <td><img src="../assets/delete-icon-18-ffffff-16.png"</td>
-        </tr>
+          form.innerHTML+= `
+          <div>
+          <div class="message-sender">${enquiry.data().name}</div>
+          <div class="sender-email">${enquiry.data().email}</div>
+          <div class="message-content">${enquiry.data().message}</div>
+          <div class="deletei"><img src="../assets/delete-icon-18-ffffff-16.png"</div>
+          <div class="reply"><i class="fas fa-reply fa-4x"></i></div>
+        </div>
           `
         });
       })

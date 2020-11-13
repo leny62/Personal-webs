@@ -9,6 +9,21 @@ function displayAside(){
     topnav.style.display='none';
 
 }
+function toggleInput(){
+    var btn=document.getElementById("add-btn");
+    var input= document.getElementById("skill-input");
+    if(input.className == "skill-input"){
+        input.classList.add("show");
+        btn.classList.add("cancel-btn");
+        btn.innerHTML="Cancel";
+    }
+    else{
+        input.classList.remove("show");
+        btn.classList.remove("cancel-btn");
+        btn.innerHTML="Add+";
+
+    }
+}
 
 function dashPart(n){
     for(let i=0; i<dashParts.length; i++){
